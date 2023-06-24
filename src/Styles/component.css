@@ -1,0 +1,81 @@
+@import '../App.css';
+
+
+.navbar {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.navbar>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.navbar>.container>p {
+    /* flex: 1, 1, 1; */
+    width: 100%;
+}
+
+.navbar>.container>ul>li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar>.container>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+/* colored heading */
+
+.coloredHeading {
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 30px;
+    width: 80%;
+    /* color: var(--secondary-color); */
+}
+
+.coloredHeading>span {
+    color: var(--primary-color);
+
+}
+
+/* home slider */
+
+.home-main-slider>p {
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    width: 80%;
+    font-weight: 500;
+
+}
+
+/* developement list */
+
+.developmentList {
+    border-top: 2px solid #e2e2e2;
+    margin-left: 50px;
+    padding: 25px 0 10px;
+}
+
+.developmentList>h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.developmentList>ul>li {
+    font-size: 14px;
+    list-style-position: inside;
+    padding-left: 7.5px;
+}
