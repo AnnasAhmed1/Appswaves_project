@@ -1,10 +1,7 @@
 @import '../App.css';
 
 .buttonComp {
-    background: var(--primary-color);
-    border: 2px solid var(--primary-color);
     border-radius: 50px;
-    color: var(--base-color);
     font-family: Poppins, sans-serif;
     font-weight: 600;
     padding: 13px 24px;
@@ -16,8 +13,86 @@
     text-transform: uppercase;
 }
 
-.buttonComp:hover {
+.solid {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--base-color);
+}
+
+.solid:hover {
     background: var(--base-color);
     border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.transparent {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.transparent:hover {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--base-color);
+}
+
+.helper-h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.helper-h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.helper-h2>span {
+    color: var(--primary-color);
+}
+
+.helper-h3 {
+    font-size: 30px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.helper-h3:hover {
+    color: var(--primary-color);
+}
+
+.helper-h4 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.helper-h5 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.helper-h3:hover {
+    color: var(--primary-color);
+}
+
+.helper-p1 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.helper-p1>span {
     color: var(--primary-color);
 }

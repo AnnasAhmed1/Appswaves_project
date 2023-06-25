@@ -18,6 +18,7 @@ body {
   font-weight: 500;
   src: url('./Fonts/Poppins-Medium.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -30,6 +31,13 @@ body {
   font-style: normal;
   font-weight: 700;
   src: url('./Fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./Fonts/Poppins-ExtraBold.ttf') format('truetype');
 }
 
 /* Add more @font-face rules for different font weights and styles if needed */

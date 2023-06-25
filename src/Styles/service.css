@@ -1,0 +1,83 @@
+.services-main-container .consultation-section {
+    display: flex;
+}
+
+.services-main-container .consultation-section>div {
+    flex: 1;
+
+}
+
+.services-main-container .consultation-section>div>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.services-main-container .consultation-section>div>div:nth-child(1) .MuiSvgIcon-root {
+    font-size: 20px;
+}
+
+.services-main-container .consultation-section>div>div li {
+    font-size: 14px;
+    list-style: none;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.services-main-container .consultation-section>div>div li:nth-last-child(1) {
+    color: var(--primary-color);
+}
+
+.services-main-container .consultation-section ul {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-column-gap: 20px; */
+
+}
+
+.services-main-container .consultation-section ul li {
+    font-weight: 400;
+    list-style-position: inside;
+}
+
+.services-main-container .consultation-section form {
+    border-radius: 15px;
+    margin-left: auto;
+    max-width: 430px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 7px 1px 100px rgba(0, 0, 0, .1);
+}
+
+.services-main-container .consultation-section form input:after {
+    background: #f47a1f;
+    content: "remme";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 48px;
+    width: 100px;
+    top: 43px;
+}
+
+.services-main-container .consultation-section form input {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    border-radius: 0;
+    color: #314252;
+    font-family: Poppins, sans-serif;
+    padding: 0;
+}
+
+.services-main-container .primary-service-section>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+
+}

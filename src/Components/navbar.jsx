@@ -37,21 +37,24 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-
-      <p style={{
-        flex:1
-      }}>logo</p>
-      <ul>
-        {navs?.map((v, i) => {
-          return (
-            <li key={i}>
-              <Link>{v.title}</Link>
-            </li>
-          );
-        })}
-        <ButtonComp text="Get a quote" />
-      </ul>
-        </div>
+        <p
+          style={{
+            flex: 1,
+          }}
+        >
+          logo
+        </p>
+        <ul>
+          {navs?.map((v, i) => {
+            return (
+              <li key={i}>
+                <Link>{v.title}</Link>
+              </li>
+            );
+          })}
+          <ButtonComp text="Get a quote" transparent={false} />
+        </ul>
+      </div>
     </nav>
   );
 };

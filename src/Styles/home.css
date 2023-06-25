@@ -2,3 +2,180 @@
     display: flex;
     justify-content: end;
 }
+
+.home-main-container .awards-section .ratings>p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--primary-color);
+
+}
+
+.home-main-container .awards-section {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.home-main-container .awards-section .awards {
+    /* flex: 2; */
+}
+
+.home-main-container .awards-section .ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1; */
+}
+
+.home-main-container .awards-section .ratings>h1 {
+    font-size: 140px;
+    font-weight: 700;
+    letter-spacing: -2;
+    line-height: 140px;
+    margin-bottom: 20px;
+}
+
+.home-main-container .awards-section .ratings>div {
+    display: flex;
+}
+
+.home-main-container .awards-section .ratings>div>.MuiSvgIcon-root {
+    color: rgb(255, 184, 0);
+    font-size: 45px;
+    flex: 1;
+}
+
+.home-main-container .crafting-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-main-container .crafting-section>div {
+    /* flex: 2; */
+}
+
+.home-main-container .crafting-section img {
+    width: 570px;
+    /* flex: 1; */
+}
+
+.home-main-container .main-section {
+    padding: 70px 0;
+
+
+}
+
+.home-main-container .estimation-section {
+    background-color: var(--secondary-color);
+}
+
+.home-main-container .estimation-section>section {
+    display: flex;
+}
+
+.home-main-container .estimation-section>section>h2 {
+    flex: 1;
+}
+
+.home-main-container .estimation-section>section>div {
+    flex: 1
+}
+
+.home-main-container .AMJ-section {
+    background-color: #ffffff;
+    padding: 70px 70px 0;
+}
+
+.home-main-container .AMJ-section div:nth-child(1) {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.home-main-container .AMJ-section>img {
+    width: 100%;
+}
+
+
+
+.home-main-container .soundly-section {
+    padding: 70px 70px 30px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 200px;
+}
+
+.home-main-container .soundly-section>div {
+    flex: 1;
+}
+
+.home-main-container .soundly-section>.image-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+.home-main-container .soundly-section>div>img {
+    display: block;
+    flex: 1;
+    bottom: 0;
+    right: -160px;
+    bottom: -30px;
+    width: 180%;
+    position: absolute;
+}
+
+.home-main-container .services-section {
+    display: flex;
+}
+
+.home-main-container .services-section>h2 {
+    flex: 1;
+}
+
+.home-main-container .services-section>div {
+    flex: 1;
+}
+
+.expertise-section .expertise {
+    display: flex;
+}
+
+.expertise-section .expertise>div {
+    /* display: flex; */
+}
+
+.expertise-section .expertise>.expertiseList {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+.expertise-section .expertise>.expertiseDetails {
+    flex: 1;
+}
+
+.expertise-section .expertise>.expertiseDetails>p:nth-child(1) {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.home-main-container .insights-section>div {
+    display: flex;
+}
+
+.home-main-container .insights-section>div>div {
+    flex: 1;
+
+}
+
+.home-main-container .insights-section .insights-list {
+    display: grid;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* padding: 30px 40px 30px 0; */
+}

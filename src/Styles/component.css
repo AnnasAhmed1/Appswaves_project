@@ -1,6 +1,5 @@
 @import '../App.css';
 
-
 .navbar {
     border-bottom: 1px solid #ebebeb;
 }
@@ -10,11 +9,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-
 }
 
 .navbar>.container>p {
-    /* flex: 1, 1, 1; */
     width: 100%;
 }
 
@@ -30,6 +27,147 @@
     gap: 32px;
 }
 
+footer {
+    background-color: #000000;
+    padding-top: 80px;
+}
+
+
+
+footer>section>div {
+    display: flex;
+    gap: 50px;
+}
+
+footer>section>div>div {
+    flex: 2;
+}
+
+footer>section>div>div:nth-last-child(1) {
+    flex: 1;
+}
+
+footer>section>div {
+    padding: 100px 0 50px;
+}
+
+footer>section>div h4 {
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: -.49546px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+footer>section>div .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+
+}
+
+footer>section>div .grid-item {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -.49546px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+footer>section>div>div>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .location-section>div>h4 {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -.49546px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+footer .location-section>div>ul>li {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0 15px;
+    letter-spacing: -.49546px;
+    font-weight: 600;
+    display: inline-block;
+    color: #ffffff;
+    list-style: none;
+    /* border-right:1px solid #fff ; */
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+
+footer .location-section>div>ul>li:hover {
+    color: var(--primary-color);
+}
+
+footer .location-section>div>ul>li:nth-child(1) {
+    border: none;
+    padding-left: 0;
+
+}
+
+footer .location-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .location-section>div:nth-child(2) {
+    display: flex;
+    gap: 10px;
+}
+
+footer .location-section>div:nth-child(2) .MuiSvgIcon-root {
+    background-color: #fff;
+    font-size: 35px;
+    padding: 7px;
+    color: #000000;
+    border-radius: 50%;
+}
+
+footer .bottom-section p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -.4px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer .bottom-section>div {
+    display: flex;
+}
+
+footer .bottom-section>div>p {
+    padding: 0 20px;
+    border-right: 1px solid #ffffff;
+
+}
+
+footer .bottom-section p:hover {
+    color: var(--primary-color);
+}
+
+footer .bottom-section>div>p:nth-last-child(1) {
+    border: none;
+    padding-right: 0;
+}
+
+footer .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px 30px;
+}
 
 /* colored heading */
 
@@ -78,4 +216,200 @@
     font-size: 14px;
     list-style-position: inside;
     padding-left: 7.5px;
+}
+
+/* awardsSlider */
+
+.awards-slider .slick-slide {
+    /* width: fit-content !important; */
+    margin: 0 20px 0 0;
+    /* width: 243px !important; */
+
+}
+
+.awards-slider .awards-card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 260px;
+    width: 243px;
+    padding: 30px 25px;
+    background: #f8f8fb;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.awards-slider .slick-list {
+    height: 300px !important;
+    overflow: hidden;
+}
+
+.awards-slider .awards-card div {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+
+    /* z-index: 99999; */
+
+}
+
+.awards-slider .awards-card img {
+    /* min-height: 130px; */
+    color: transparent;
+    display: inline-block;
+    filter: blur(0);
+    transition: filter .3s;
+    width: 175px;
+    margin: 0 auto;
+}
+
+.awards-slider .awards-card h5 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.awards-slider .awards-card p {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.app-types {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.app-types>div>p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    margin-bottom: 5px;
+}
+
+.app-types>img {
+    height: 90px;
+    /* margin-right: 20px; */
+    width: 200px;
+    border-right: 1px solid #e2e2e2;
+}
+
+/* info-section */
+.info-section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.info-section .personal-info img {
+    border-radius: 100%;
+    height: 70px;
+    object-fit: contain;
+    width: 70px;
+}
+
+.info-section .personal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section .personal-info>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-section .personal-info>div:nth-child(1)>div>h6 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    font-weight: 600;
+}
+
+.info-section .personal-info>div:nth-child(1)>div>p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-section .personal-info>div:nth-child(2) {
+    display: flex;
+    color: var(--primary-color);
+    /* justify-content: center; */
+    gap: 20px;
+    align-items: center;
+}
+
+.info-section .personal-info>div:nth-child(2)>p {
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/* home components end */
+
+/* services components start */
+
+.service-card {
+    border-radius: 25px;
+    height: 230px;
+    padding: 25px;
+    background: #fcfcfc;
+    position: relative;
+    transition: .3s linear;
+    margin-bottom: 30px;
+}
+
+.service-card h4 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 0;
+    padding-right: 40px;
+}
+
+.service-card .MuiSvgIcon-root {
+    border-radius: 10px;
+    bottom: 25px;
+    height: 40px;
+    right: 25px;
+    width: 40px;
+    align-items: center;
+    background: #ffebdc;
+    position: absolute;
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.service-card:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.service-card:hover h4{
+    color: #fff;
+}
+.service-card:hover p{
+    color: #fff;
+}
+.service-card:hover .MuiSvgIcon-root{
+    background-color: #fff;
 }
