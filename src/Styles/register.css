@@ -1,0 +1,32 @@
+.register-main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register-main section img {
+    width: 100%;
+    flex: 1;
+}
+
+.register-main section form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.register-main section form .MuiFormControl-root {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.register-main section form .MuiFormControl-root .MuiInputBase-root {
+    width: 100% !important;
+
+}
+
+.register-main section form .MuiFormControl-root .MuiInputBase-root input {
+    line-height: 40px;
+    font-size: 14px;
+}

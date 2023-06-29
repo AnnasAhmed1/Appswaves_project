@@ -1,8 +1,13 @@
 import React from "react";
 
-const ColoredHeading = ({ text, coloredText, reverse = false }) => {
+const ColoredHeading = ({
+  text,
+  coloredText,
+  reverse = false,
+  dataText = "",
+}) => {
   return (
-    <h1 className="coloredHeading">
+    <h1 data-text={dataText} className="coloredHeading">
       {!reverse ? text : null}
       <span>{" " + coloredText + " "}</span>
       {reverse ? text : null}

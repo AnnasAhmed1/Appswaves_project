@@ -57,7 +57,37 @@ const AwardsSlider = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
-    arrows:false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <Slider className="awards-slider" {...settings}>

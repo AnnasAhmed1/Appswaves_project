@@ -1,6 +1,8 @@
-export const H1 = ({ text, color = false, center = false }) => {
+import "animate.css";
+export const H1 = ({ text, color = false, center = false, dataText = "" }) => {
   return (
     <h1
+      data-text={dataText}
       style={{
         color: color ? color : null,
         textAlign: center ? "center" : null,
@@ -11,14 +13,15 @@ export const H1 = ({ text, color = false, center = false }) => {
     </h1>
   );
 };
-export const H2 = ({ text, color = false, center = false }) => {
+export const H2 = ({ text, color = false, center = false, dataText = "" }) => {
   return (
     <h2
+      data-text={dataText}
       style={{
         color: color ? color : null,
         textAlign: center ? "center" : null,
       }}
-      className="helper-h2"
+      className="helper-h2 animate__animated"
     >
       {text}
     </h2>
@@ -30,9 +33,11 @@ export const H3 = ({
   color = false,
   pointer = false,
   onClick = () => {},
+  dataText = "",
 }) => {
   return (
     <h3
+      data-text={dataText}
       onClick={onClick}
       style={{
         color: color ? color : null,
@@ -44,9 +49,10 @@ export const H3 = ({
     </h3>
   );
 };
-export const H4 = ({ text, color = false }) => {
+export const H4 = ({ text, color = false, dataText = "" }) => {
   return (
     <h4
+      data-text={dataText}
       style={{
         color: color ? color : null,
       }}
@@ -56,9 +62,10 @@ export const H4 = ({ text, color = false }) => {
     </h4>
   );
 };
-export const H5 = ({ text, color = false }) => {
+export const H5 = ({ text, color = false, dataText = "" }) => {
   return (
     <h5
+      data-text={dataText}
       style={{
         color: color ? color : null,
       }}

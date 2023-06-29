@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --primary-color: #f47a1f;
   --secondary-color: #314252;

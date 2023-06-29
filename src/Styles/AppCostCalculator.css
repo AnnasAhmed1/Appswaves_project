@@ -1,0 +1,161 @@
+.app-cost-calculator-main .fixed-container {
+    height: 90vh;
+    overflow: hidden;
+
+}
+
+.app-cost-calculator-main nav {
+    height: 10vh;
+    overflow: hidden;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.app-cost-calculator-main .calculator-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-cost-calculator-main .calculator-section h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    color: #282526;
+    line-height: 48px;
+}
+
+.app-cost-calculator-main .calculator-section>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    margin: 30px 0 20px;
+    padding: 0 10px;
+}
+
+.app-cost-calculator-main .calculator-section .card-label {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all .5s;
+    width: 100%;
+    height: 220px;
+}
+
+
+.app-cost-calculator-main .calculator-section .card-label h2 {
+    color: #282526;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.app-cost-calculator-main .calculator-section .card-label input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #282526;
+}
+
+.app-cost-calculator-main .calculator-section .card-label .anticon {
+    font-size: 60px;
+}
+
+.app-cost-calculator-main .calculator-section .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app-cost-calculator-main .calculator-section .buttons-container p {
+    gap: 15px;
+    padding: 0 20px;
+    border-radius: 6px;
+    text-align: center;
+    color: #ee3824;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.app-cost-calculator-main .calculator-section .buttons-container button {
+    margin-left: auto;
+    width: min-content;
+}
+
+.app-cost-calculator-main .calculator-section .card-label:hover h2 {
+    color: var(--primary-color);
+}
+
+.app-cost-calculator-main .calculator-section .card-label:hover .anticon {
+    color: var(--primary-color);
+}
+
+.app-cost-calculator-main .calculator-section .card-label:hover {
+    box-shadow: rgba(244, 122, 31, 0.5) 0px 0px 16px;
+}
+
+.app-cost-calculator-main .calculator-section .card-label-question {
+    justify-content: start;
+    height: auto;
+    align-items: flex-start;
+    margin: 20px 0;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.app-cost-calculator-main .calculator-section .question-number {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.app-cost-calculator-main .calculator-section .question-number span {
+    color: var(--primary-color);
+}
+
+.app-cost-calculator-main .calculator-section .question-number::before {
+    content: '';
+    background: #ee3824;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -4px;
+}
+
+.app-cost-calculator-main .calculator-section .card-label-question .question-option {
+    font-size: 12px;
+    padding: 15px 0;
+    padding-left: 75px;
+    font-weight: 600;
+}
+
+.app-cost-calculator-main .calculator-section .card-label-question input {
+    top: 15px;
+    left: 25px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #282526;
+}

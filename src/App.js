@@ -8,17 +8,32 @@ import "./Styles/layout.css";
 import "./Styles/component.css";
 import Home from "./Pages/Home";
 import Services from "./Pages/Services";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ServiceDetails from "./Pages/Services/ServiceDetails";
+import AppCostCalculator from "./Pages/AppCostCalculator";
+import Form from "./Pages/chk";
+import Register from "./Pages/Register";
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <Layout>
-      <Services />
-    </Layout>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:servicename" element={<ServiceDetails />} />
+        <Route path="/app-cost-calculator" element={<AppCostCalculator />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/chk" element={<Form />} />
+      </Routes>
+      {/* <Layout>
+        <Services />
+      </Layout> */}
+    </Router>
   );
 }
 

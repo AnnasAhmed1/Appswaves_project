@@ -13,6 +13,26 @@
     text-transform: uppercase;
 }
 
+.gradientButton {
+    border: 0px solid #ee3824;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* font-family: Gilroy-Medium; */
+    transition: linear .3s;
+    background: rgb(255, 162, 10);
+    background: linear-gradient(-90deg, rgba(255, 162, 10, 1) 0%, rgba(253, 75, 15, 1) 100%);
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    cursor: pointer;
+    /* margin-top: 23px; */
+}
+
 .solid {
     background: var(--primary-color);
     border: 2px solid var(--primary-color);
@@ -44,6 +64,7 @@
     letter-spacing: -2px;
     text-transform: capitalize;
     font-weight: 800;
+    position: relative;
 }
 
 .helper-h2 {
@@ -52,6 +73,63 @@
     margin-bottom: 35px;
     font-weight: 700;
     letter-spacing: -2px;
+    position: relative;
+}
+
+
+
+.helper-h2::after,
+.helper-h1::after,
+.helper-h3::after,
+.helper-h4::after {
+    bottom: 0;
+    color: #e2e2e2;
+    content: attr(data-text);
+    /* font-family: Poppins,sans-serif; */
+    /* font-size: 190px; */
+    font-style: normal;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: -.03em;
+    line-height: 0px;
+    opacity: .25;
+    position: absolute;
+    width: 1600px;
+    z-index: -1;
+    font-size: 130px;
+    line-height: 0px;
+    width: 1240px;
+}
+
+
+
+.helper-h2:hover::after,
+.helper-h1:hover::after,
+.helper-h3:hover::after,
+.helper-h2:hover::after {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .helper-h2>span {
@@ -62,6 +140,7 @@
     font-size: 30px;
     line-height: 60px;
     color: #000000;
+    position: relative;
 }
 
 .helper-h3:hover {
@@ -73,6 +152,7 @@
     line-height: 35px;
     margin-bottom: 20px;
     font-weight: 700;
+    position: relative;
 }
 
 .helper-h5 {
@@ -80,6 +160,7 @@
     line-height: 30px;
     margin-bottom: 20px;
     font-weight: 700;
+    position: relative;
 }
 
 .helper-h3:hover {
@@ -93,6 +174,119 @@
     margin-bottom: 20px;
 }
 
+.helper-p2 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+}
+
 .helper-p1>span {
     color: var(--primary-color);
+}
+
+@media (max-width:1200px) {
+
+    /* .helper-h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+    } */
+    .helper-h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+
+    .helper-h2::after,
+    .helper-h1::after,
+    .helper-h3::after,
+    .helper-h4::after {
+        letter-spacing: -.03em;
+        width: 800px;
+        z-index: -1;
+        font-size: 80px;
+    }
+
+    .helper-p2 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 1rem;
+    }
+
+    /* .helper-p1 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    } */
+}
+
+@media (max-width:993px) {
+    .helper-h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+    }
+
+    .helper-h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .helper-h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .helper-h2::after,
+    .helper-h1::after,
+    .helper-h3::after,
+    .helper-h4::after {
+        letter-spacing: -.03em;
+        width: 700px;
+        z-index: -1;
+        font-size: 70px;
+    }
+
+    .helper-p1 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .helper-p2 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .helper-h2 {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+    }
+
+    .helper-h2::after,
+    .helper-h1::after,
+    .helper-h3::after,
+    .helper-h4::after {
+        letter-spacing: -.03em;
+        width: 400px;
+        z-index: -1;
+        font-size: 40px;
+    }
+
+    .helper-p1 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
 }
