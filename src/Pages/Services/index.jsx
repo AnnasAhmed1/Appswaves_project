@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { H1, H2 } from "../../Helper/headings";
 import { P1 } from "../../Helper/paragraphs";
 import "../../Styles/service.css";
@@ -8,13 +8,27 @@ import Layout from "../../Layout";
 import ButtonComp from "../../Helper/button_comp";
 
 const Services = () => {
+  const formRef = useRef(null);
+
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbzFjN1X4WfQrCPFUlAeP5G1jk1tXgcYMRig8koSf5iIA7zoJU7wGMhX-fhLkQV-UkYa0w/exec";
+  const handleSubmit = (e) => {
+    console.log("formsubmit");
+    e.preventDefault();
+
+    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current) })
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <Layout>
       <main className="services-main-container container">
         <section className="consultation-section">
           <div>
             <div>
-              <li>TekRevol</li>
+              <li>Appsnade</li>
               <EastSharpIcon />
               <li>Services</li>
             </div>
@@ -35,7 +49,7 @@ const Services = () => {
             </ul>
           </div>
           <div>
-            <form action="">
+            <form ref={formRef} onSubmit={handleSubmit} action="">
               <h2 className="helper-h2">
                 Book A Free<span> Consultation</span>
               </h2>

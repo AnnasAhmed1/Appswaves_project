@@ -14,8 +14,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServiceDetails from "./Pages/Services/ServiceDetails";
 import AppCostCalculator from "./Pages/AppCostCalculator";
-import Form from "./Pages/chk";
 import Register from "./Pages/Register";
+import Form from "./Pages/chk_for";
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
 

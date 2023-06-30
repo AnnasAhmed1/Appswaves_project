@@ -368,7 +368,7 @@ const Home = () => {
                 <H2 text={"Case Studies"} dataText="Our Portfolio" />
                 <P1
                   text={
-                    "See the list below for the completed and delivered projects for our clients in different industries. TekRevol’s team of agile developers and project managers follow a defined methodology to undertake projects and cater to the client’s requirements. Our culture is rightly crafted to deliver a rewarding experience for our engineering team and client as we emphasize tightly integrating with your team for top-tier development."
+                    "See the list below for the completed and delivered projects for our clients in different industries. Appsnade’s team of agile developers and project managers follow a defined methodology to undertake projects and cater to the client’s requirements. Our culture is rightly crafted to deliver a rewarding experience for our engineering team and client as we emphasize tightly integrating with your team for top-tier development."
                   }
                 />
               </section>
@@ -416,7 +416,7 @@ const Home = () => {
                 </div>
               </section>
               <PersonalInfo
-                text={`“We truly appreciate how much Tekrevol cares about our project, from the beginning point to the deployment, they delivered everything efficiently."`}
+                text={`“We truly appreciate how much Appsnade cares about our project, from the beginning point to the deployment, they delivered everything efficiently."`}
                 name={"Ethan Dobbins"}
                 designation={"Soundly, CEO"}
                 image={"soundly_ceo.png"}
@@ -432,7 +432,7 @@ const Home = () => {
                   <H2 text={"The Idea Behind Soundly"} color="#ffffff" />
                   <P1
                     text={
-                      "Plank is an online platform for fitness and exercise enthusiasts aiming to look after their health and exercise at home. With video tutorials and challenges, this platform brings a new idea to life. TekRevol has developed several digital solutions, including mobile apps, pertaining to the fitness and healthcare sector."
+                      "Plank is an online platform for fitness and exercise enthusiasts aiming to look after their health and exercise at home. With video tutorials and challenges, this platform brings a new idea to life. Appsnade has developed several digital solutions, including mobile apps, pertaining to the fitness and healthcare sector."
                     }
                     color="#ffffff"
                   />
@@ -448,7 +448,7 @@ const Home = () => {
                 </div>
               </section>
               <PersonalInfo
-                text={`“I had the pleasure of working with TekRevol on the development of our fitness app, and I am extremely impressed with the level of service they provided. Their team was incredibly knowledgeable, professional, and dedicated to ensuring that our app was developed to the highest standard."`}
+                text={`“I had the pleasure of working with Appsnade on the development of our fitness app, and I am extremely impressed with the level of service they provided. Their team was incredibly knowledgeable, professional, and dedicated to ensuring that our app was developed to the highest standard."`}
                 name={"Ari Marinovsky"}
                 designation={"Pure Plank, CEO"}
                 image={"pure_plank_ceo.jpeg"}
@@ -465,7 +465,7 @@ const Home = () => {
               <div>
                 <P1
                   text={
-                    "The future is digital, there's no doubt about it. At TekRevol, we believe that each digital touch-point is an opportunity to create meaningful interactions and build a mutually beneficial connection between a brand and its audience. We offer a wide range of software development services that has helped us attain a strong digital presence in the highly competitive market."
+                    "The future is digital, there's no doubt about it. At Appsnade, we believe that each digital touch-point is an opportunity to create meaningful interactions and build a mutually beneficial connection between a brand and its audience. We offer a wide range of software development services that has helped us attain a strong digital presence in the highly competitive market."
                   }
                 />
                 <H4 text={"Custom Software Development"} />

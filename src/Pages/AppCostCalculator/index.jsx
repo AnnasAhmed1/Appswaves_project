@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   MobileOutlined,
   AppleOutlined,
@@ -9,6 +9,7 @@ import "../../Styles/AppCostCalculator.css";
 import GradientButton from "../../Helper/GradientButton";
 import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSharp";
 const AppCostCalculator = () => {
+  const formRef = useRef(null)
   const [activeSection, setActiveSection] = useState(2);
   const platforms = [
     { icon: <AndroidOutlined />, title: "Android App", id: "android" },
@@ -92,6 +93,7 @@ const AppCostCalculator = () => {
     setActiveSection(activeSection + 1);
     // onClick={(e) => scrollToSection(e, v.link)}
   }
+
   return (
     <main
       style={{

@@ -10,7 +10,7 @@ const ServiceCard = () => {
       <H4 text={"Android App Development"} />
       <P1
         text={
-          "TekRevol develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability."
+          "Appsnade develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability."
         }
       />
       <EastSharpIcon />

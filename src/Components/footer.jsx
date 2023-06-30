@@ -32,7 +32,7 @@ const Footer = () => {
     "IT Staff Augmentation",
   ];
   const aboutList = [
-    "About TekRevol",
+    "About Appsnade",
     "Referral Program",
     "Blogs",
     "Press",
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </section>
         <section className="bottom-section">
-          <p>© Tekrevol 2023. All rights reserved</p>
+          <p>© Appsnade 2023. All rights reserved</p>
           <div>
             <p>Terms and Conditions</p>
             <p>Privacy Policy</p>
