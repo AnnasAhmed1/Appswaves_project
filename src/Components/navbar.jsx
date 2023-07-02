@@ -142,6 +142,101 @@ const Navbar = ({ gradientButton = false }) => {
       ),
     },
   ];
+  const subContainerSolutions = [
+    {
+      key: 1,
+      label: (
+        <div className="sub-nav-container " href="app-development">
+          <div
+            style={{
+              display: "flex",
+            }}
+            className="container"
+          >
+            <div>
+              <h3>Our Solution</h3>
+              <img src={require(".././Assets/nav_image.webp")} alt="" />
+            </div>
+            <div>
+              <h3>Primary</h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/cms-solution`}>
+                  CMS Solution
+                </a>
+                <a className="link-list-item" href={`/solutions/hrm-solution`}>
+                  HRM Solution
+                </a>
+                <a className="link-list-item" href={`/solutions/crm-solution`}>
+                  CRM Solution
+                </a>
+                <a className="link-list-item" href={`/solutions/erp-solution`}>
+                  ERP Solution
+                </a>
+                <a className="link-list-item" href={`/solutions/lms-solution`}>
+                  LMS Solution
+                </a>
+                <a className="link-list-item" href={`/solutions/pos-solution`}>
+                  POS Solution
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Industries</h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/automotive`}>
+                  Automotive
+                </a>
+                <a className="link-list-item" href={`/solutions/healthcare`}>
+                  Healthcare
+                </a>
+                <a className="link-list-item" href={`/solutions/on-demand`}>
+                  On-Demand
+                </a>
+                <a className="link-list-item" href={`/solutions/education`}>
+                  Education
+                </a>
+                <a className="link-list-item" href={`/solutions/music`}>
+                  Music
+                </a>
+                <a className="link-list-item" href={`/solutions/fintech`}>
+                  Fintech
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3
+                style={{
+                  opacity: 0,
+                }}
+              >
+                I
+              </h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/logistics`}>
+                  Logistics
+                </a>
+                <a className="link-list-item" href={`/solutions/retail`}>
+                  Retail
+                </a>
+                <a className="link-list-item" href={`/solutions/ecommerce`}>
+                  Ecommerce
+                </a>
+                <a className="link-list-item" href={`/solutions/real-estate`}>
+                  Real Estate
+                </a>
+                <a
+                  className="link-list-item"
+                  href={`/solutions/staff-augmentation`}
+                >
+                  Staff Augmentation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+  ];
   const navs = [
     {
       title: "Home",
@@ -351,7 +446,7 @@ const Navbar = ({ gradientButton = false }) => {
     },
     {
       title: "Solutions",
-      subRoutes: [],
+      subRoutes: [1, 2, 3],
     },
     {
       title: "Technologies",
@@ -481,12 +576,15 @@ const Navbar = ({ gradientButton = false }) => {
                       }}
                       className="nav-dropdown"
                       menu={{
-                        items: subContainer,
+                        items:
+                          v.title == "Services"
+                            ? subContainer
+                            : subContainerSolutions,
                       }}
                       placement="bottom"
                       arrow
                     >
-                      <Link to={"/services"}>{v.title}</Link>
+                      <Link to={`/${v.title}`}>{v.title}</Link>
                     </Dropdown>
                   ) : (
                     <Link to={"/"}>{v.title}</Link>

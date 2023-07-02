@@ -1,23 +1,22 @@
 import axios from "axios";
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
+import instance from "../Axois";
 
 const Form = () => {
   const formRef = useRef(null);
-  const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbwDqUkQSuF5IdloMvpjuV7yrtdgaotQbcd1eK7k7d1h/dev";
+
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    axios
+    instance
       .post(
         "https://sheet.best/api/sheets/64a870e1-2c9e-4020-9234-c70b3a11c56a",
         {
-          name: "annas",
-          age: "16",
+          name: "asss",
         }
       )
       .then((response) => {

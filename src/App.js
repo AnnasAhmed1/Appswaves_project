@@ -9,15 +9,28 @@ import "./Styles/component.css";
 import Home from "./Pages/Home";
 import Services from "./Pages/Services";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
+// import ScrollToTop from 'react-router-scroll-top';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServiceDetails from "./Pages/Services/ServiceDetails";
 import AppCostCalculator from "./Pages/AppCostCalculator";
 import Register from "./Pages/Register";
 import Form from "./Pages/chk_for";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Solutions from "./Pages/Solutions";
+import SolutionDetails from "./Pages/Solutions/SolutionDetails";
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
@@ -26,10 +39,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:servicename" element={<ServiceDetails />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/solutions/:solutionname" element={<SolutionDetails />} />
         <Route path="/app-cost-calculator" element={<AppCostCalculator />} />
         <Route path="/register" element={<Register />} />
         <Route path="/chk" element={<Form />} />
       </Routes>
+      <ScrollToTop />
       {/* <Layout>
         <Services />
       </Layout> */}

@@ -8,14 +8,36 @@ import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import GradientButton from "../../Helper/GradientButton";
 import "../../Styles/register.css";
+import { useLocation } from "react-router-dom";
 
 const Register = () => {
+  const location = useLocation();
+  const receivedValue = location.state;
+  let email;
+  let projectName;
+  let phoneNumber;
+  let name;
+  console.log(receivedValue);
+
   return (
     <main className="register-main container">
       <nav>logo</nav>
       <section>
         <img src={require("../../Assets/register_img.png")} alt="" />
-        <form action="">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const objtoSend = {
+              projectName,
+              phone: phoneNumber,
+              name,
+              email,
+              ...receivedValue,
+            };
+            console.log(objtoSend);
+          }}
+          action=""
+        >
           <h2 className="heading">You are almost there...</h2>
           <P1
             text={
@@ -27,6 +49,10 @@ const Register = () => {
             <Input
               id="project_name"
               placeholder="YOUR PROJECT NAME"
+              required
+              onChange={(e) => {
+                projectName = e.target.value;
+              }}
               startAdornment={
                 <InputAdornment position="start">
                   {/* <AccountCircle /> */}
@@ -39,6 +65,10 @@ const Register = () => {
             <Input
               id="your_name"
               placeholder="YOUR NAME"
+              required
+              onChange={(e) => {
+                name = e.target.value;
+              }}
               startAdornment={
                 <InputAdornment position="start">
                   {/* <AccountCircle /> */}
@@ -51,6 +81,10 @@ const Register = () => {
             <Input
               id="your_email"
               placeholder="YOUR EMAIL"
+              required
+              onChange={(e) => {
+                email = e.target.value;
+              }}
               startAdornment={
                 <InputAdornment position="start">
                   {/* <AccountCircle /> */}
@@ -63,6 +97,10 @@ const Register = () => {
             <Input
               id="phone_number"
               placeholder="YOUR PHONE NUMBER"
+              required
+              onChange={(e) => {
+                phoneNumber = e.target.value;
+              }}
               startAdornment={
                 <InputAdornment position="start">
                   {/* <AccountCircle /> */}

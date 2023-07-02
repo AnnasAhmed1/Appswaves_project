@@ -159,7 +159,11 @@ footer>section>div .grid-item {
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 10px;
+    width: fit-content;
+}
 
+footer>section>div .grid-item:hover {
+    color: var(--primary-color);
 }
 
 footer>section>div>div>div {

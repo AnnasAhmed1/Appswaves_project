@@ -22,6 +22,250 @@ const Services = () => {
       })
       .catch((err) => console.log(err));
   };
+
+  const primaryService = [
+    {
+      title: "Android App Development",
+      description:
+        "TekRevol develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
+    },
+
+    {
+      title: "iOS App Development",
+      description:
+        "TekRevol has a team of experienced Android App Developers that are ready to help you with your app idea.",
+    },
+
+    {
+      title: "Cross Platform App Development",
+      description:
+        "Partner with TekRevol to get the most out of your next app project",
+    },
+
+    {
+      title: "Custom Software Development",
+      description:
+        "Our custom software development services provide our clients with the freedom to grow and scale",
+    },
+
+    {
+      title: "Startup App Development",
+      description:
+        "We rely on our modernized core to help startups to bring their app ideas to life",
+    },
+
+    {
+      title: "Flutter app development",
+      description:
+        "TekRevol is a full-scale flutter app development company that build scalable mobile apps",
+    },
+
+    {
+      title: "Web Development",
+      description:
+        "Establish a strong digital presence with custom website design and development services.",
+    },
+
+    {
+      title: "Game Development",
+      description:
+        "TekRevol is a leading mobile game development company that develop high-quality mobile games",
+    },
+
+    {
+      title: "React Native App Development",
+      description:
+        "Partner with TekRevol as your react native app development company.",
+    },
+
+    {
+      title: "Mobile App Support",
+      description:
+        "Tekrevol provides result-orientated and efficient application support and maintenance solution for after deployment.",
+    },
+
+    {
+      title: "Wearable App Development",
+      description:
+        "Explore the limitless possibilities with wearable technology and expand your business through smarter, more efficient solutions.",
+    },
+
+    {
+      title: "Cloud Native Development",
+      description:
+        "Creating and delivering an innovative business experience to your stakeholder.",
+    },
+
+    {
+      title: "IoT Development",
+      description:
+        "An IoT application development company creating and delivering state-of-the-art & smart IoT",
+    },
+
+    {
+      title: "API Integration",
+      description:
+        "Scale the capabilities of your business solutions through custom API development and integration services",
+    },
+
+    {
+      title: "E-Commerce Software Development",
+      description:
+        "Scale the capabilities of your business solutions through custom API development and integration services",
+    },
+
+    {
+      title: "Chatbot Development",
+      description: "Boost customer engagement and communication efforts 10x",
+    },
+  ];
+
+  const consultingServices = [
+    {
+      title: "Cloud Computing",
+      description:
+        "Cloud technology makes it possible to build excellent IT infrastructure",
+    },
+
+    {
+      title: "CTO Consultant",
+      description:
+        "Work with C-level tech executives to experience fundamental digital transformation.",
+    },
+
+    {
+      title: "Emerging Technology",
+      description:
+        "TekRevol delivers world-class enterprise emerging technology solution",
+    },
+
+    {
+      title: "Digital Transformation",
+      description:
+        "As premier digital transformation consultants, our digital transformation services provide our clients",
+    },
+
+    {
+      title: "Digital Marketplace",
+      description:
+        "Create fully-featured online niche marketplaces, attract relevant global traffic",
+    },
+
+    {
+      title: "Data Analytics",
+      description:
+        "TekRevol’s big data analytics services are designed for enterprise organizations.",
+    },
+
+    {
+      title: "Digital Strategy",
+      description:
+        "Our digital strategy consulting services are user-centric digitalized concepts",
+    },
+
+    {
+      title: "Ip Protection",
+      description:
+        "Protecting Intellectual Property can be an incredibly expensive, time consuming and complex task.",
+    },
+
+    {
+      title: "Technology Consulting",
+      description:
+        "Our tech consulting services encompass all the modern aspects",
+    },
+
+    {
+      title: "MVP Software Development",
+      description:
+        "TekRevol is experienced in designing, developing, and launching minimum viable products",
+    },
+
+    {
+      title: "Managing Mobility",
+      description:
+        "Tekrevol helps you set up the architecture, build mobility systems",
+    },
+
+    {
+      title: "ERP Development",
+      description:
+        "TekRevol’s enterprise technology services are suited for large institutions",
+    },
+
+    {
+      title: "Lean Startup Plan",
+      description:
+        "Our lean startup services enable startups to find the right areas that impact consumers",
+    },
+
+    {
+      title: "Research and Development",
+      description:
+        "TekRevol is a technology research and development company working to improve existing services",
+    },
+  ];
+  const trendingServices = [
+    {
+      title: "AI Development",
+      description:
+        "Reach new levels of business success while combining human performance with machines, data, and algorithms",
+    },
+
+    {
+      title: "AR/VR Company",
+      description:
+        "An AR/VR app development company to cater to next-gen digital media enthusiasts.",
+    },
+
+    {
+      title: "Digital Strategy",
+      description:
+        "Our digital strategy consulting services are user-centric digitalized concepts",
+    },
+
+    {
+      title: "Automation Consultancy",
+      description:
+        "Put the right talent, data, and intelligence into action for business transformation.",
+    },
+
+    {
+      title: "Bluetooth App Development",
+      description:
+        "Deliver low-consumption interactive experiences to your end users through beacon-based digital products.",
+    },
+
+    {
+      title: "NFT Development",
+      description:
+        "TekRevol boards experienced NFT developers in the industry to facilitate the digital assets",
+    },
+
+    {
+      title: "Machine Learning",
+      description:
+        "Use ML solutions and establish stronger foundations for effective business processes",
+    },
+
+    {
+      title: "Blockchain Development",
+      description:
+        "We are a Blockchain development services provider to help enterprises to acquire transparency and automation",
+    },
+
+    {
+      title: "Metaverse Development",
+      description:
+        "Build your own shared and immersive experiences where players and avatars can engage with each other",
+    },
+
+    {
+      title: "DevOps Consultancy",
+      description:
+        "Accomplish your technical delivery objectives and create, deploy and test your products and solutions faster.",
+    },
+  ];
   return (
     <Layout>
       <main className="services-main-container container">
@@ -71,66 +315,45 @@ const Services = () => {
           </div>
         </section>
         <section className="primary-service-section main-section">
-          <H2 text={"Primary Services"} />
+          <H2 text={"Primary Services"} dataText="Primary" />
           <div>
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            {primaryService.map((service, index) => {
+              return (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                />
+              );
+            })}
           </div>
         </section>
         <section className="primary-service-section main-section">
-          <H2 text={"Consulting Services"} />
+          <H2 text={"Consulting Services"} dataText="Consulting" />
           <div>
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            {consultingServices.map((service, index) => {
+              return (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                />
+              );
+            })}
           </div>
         </section>
         <section className="primary-service-section main-section">
-          <H2 text={"Trending Services"} />
+          <H2 text={"Trending Services"} dataText="Trending" />
           <div>
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            {trendingServices.map((service, index) => {
+              return (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                />
+              );
+            })}
           </div>
         </section>
       </main>

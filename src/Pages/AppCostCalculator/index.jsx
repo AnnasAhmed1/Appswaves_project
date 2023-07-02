@@ -8,9 +8,17 @@ import {
 import "../../Styles/AppCostCalculator.css";
 import GradientButton from "../../Helper/GradientButton";
 import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSharp";
+import { useNavigate } from "react-router-dom";
+import instance from "../../Axois";
+import axios from "axios";
 const AppCostCalculator = () => {
-  const formRef = useRef(null)
-  const [activeSection, setActiveSection] = useState(2);
+  const formRef = useRef(null);
+  const [activeSection, setActiveSection] = useState(1);
+  const navigate = useNavigate();
+  const [selectedPlatform, setSelectedPlatform] = useState();
+  const [selectedProjectType, setSelectedProjectType] = useState();
+  const [selectedQuestions, setSelectedQuestions] = useState([]);
+
   const platforms = [
     { icon: <AndroidOutlined />, title: "Android App", id: "android" },
     { icon: <AppleOutlined />, title: "iOS App", id: "ios" },
@@ -86,13 +94,60 @@ const AppCostCalculator = () => {
     },
   ];
   function scrollToSection(e) {
-    const id = activeSection;
+    const id = activeSection + 1;
     e.preventDefault();
     const element = document.querySelector(`#section-${id}`);
     element?.scrollIntoView({ behavior: "smooth" });
     setActiveSection(activeSection + 1);
-    // onClick={(e) => scrollToSection(e, v.link)}
   }
+  function scrollBackToSection(e) {
+    const id = activeSection - 1;
+    e.preventDefault();
+    const element = document.querySelector(`#section-${id}`);
+    element?.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(activeSection - 1);
+  }
+
+  const initialObj = {
+    platform: selectedPlatform,
+    projectType: selectedProjectType,
+  };
+
+  const questionObj = selectedQuestions.reduce((acc, item, index) => {
+    acc[`question${index + 1}`] = item.question;
+    acc[`answer${index + 1}`] = item.answer;
+    return acc;
+  }, {});
+
+  const objToSend = {
+    ...initialObj,
+    ...questionObj,
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let obj = {
+      platform: selectedPlatform,
+      projectType: selectedProjectType,
+      questions: selectedQuestions,
+    };
+    navigate("/register", { state: obj });
+
+    // axios
+    //   .post(
+    //     "https://sheet.best/api/sheets/64a870e1-2c9e-4020-9234-c70b3a11c56a",
+    //     {
+    //       platform: selectedPlatform,
+    //       projectType: selectedProjectType,
+    //       questions: selectedQuestions,
+    //     }
+    //   )
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+  };
 
   return (
     <main
@@ -116,12 +171,16 @@ const AppCostCalculator = () => {
           <div>
             {platforms.map((platform, index) => {
               return (
-                <label className="card-label" for="demoCheckbox">
+                <label className="card-label" for={platform.id}>
                   <input
-                    type="checkbox"
+                    type="radio"
                     id={platform.id}
-                    name={platform.id}
+                    name={"platform"}
                     value={platform.id}
+                    onChange={(e) => {
+                      setSelectedPlatform(platform.id);
+                      console.log(e.target.value);
+                    }}
                   />
                   {platform.icon}
                   <h2>{platform.title}</h2>
@@ -133,7 +192,7 @@ const AppCostCalculator = () => {
             <GradientButton
               text="Next"
               transparent={false}
-              onClick={(e) => scrollToSection(e)}
+              onClick={selectedPlatform ? (e) => scrollToSection(e) : null}
             />
           </div>
         </section>
@@ -154,12 +213,16 @@ const AppCostCalculator = () => {
           >
             {type.map((type, index) => {
               return (
-                <label className="card-label" for="demoCheckbox">
+                <label className="card-label" for={type.id}>
                   <input
-                    type="checkbox"
+                    type="radio"
                     id={type.id}
-                    name={type.id}
+                    name={"type"}
                     value={type.id}
+                    onChange={(e) => {
+                      setSelectedProjectType(type.id);
+                      console.log(e.target.value);
+                    }}
                   />
                   <img src={require(`../../Assets/${type.image}.png`)} alt="" />{" "}
                   {type.icon}
@@ -169,7 +232,7 @@ const AppCostCalculator = () => {
             })}
           </div>
           <div className="buttons-container">
-            <p>
+            <p onClick={(e) => scrollBackToSection(e)}>
               <KeyboardBackspaceSharpIcon fontSize="30px" />
               BACK
             </p>
@@ -177,11 +240,13 @@ const AppCostCalculator = () => {
             <GradientButton
               text="Next"
               transparent={false}
-              onClick={(e) => scrollToSection(e)}
+              onClick={selectedProjectType ? (e) => scrollToSection(e) : null}
             />
           </div>
         </section>
         {questions.map((question, index) => {
+          let selectedOption = "";
+
           return (
             <section
               id={`section-${index + 3}`}
@@ -201,13 +266,16 @@ const AppCostCalculator = () => {
                   return (
                     <label
                       className="card-label card-label-question"
-                      for="demoCheckbox"
+                      for={option.id}
                     >
                       <input
-                        type="checkbox"
+                        type="radio"
                         id={option.id}
-                        name={option.id}
+                        name={question}
                         value={option.id}
+                        onChange={(e) => {
+                          selectedOption = option.id;
+                        }}
                       />
                       <p className="question-option">{option.title}</p>
                     </label>
@@ -215,17 +283,28 @@ const AppCostCalculator = () => {
                 })}
               </div>
               <div className="buttons-container">
-                <p>
+                <p onClick={(e) => scrollBackToSection(e)}>
                   <KeyboardBackspaceSharpIcon fontSize="30px" />
                   BACK
                 </p>
 
                 <GradientButton
-                  text={
-                    index != question.options.length - 1 ? "Next" : "Finish"
-                  }
+                  text={index != questions.length - 1 ? "Next" : "Finish"}
                   transparent={false}
-                  onClick={(e) => scrollToSection(e)}
+                  onClick={(e) => {
+                    setSelectedQuestions([
+                      ...selectedQuestions,
+                      {
+                        question: question.question,
+                        answer: selectedOption,
+                      },
+                    ]);
+                    if (index === questions.length - 1) {
+                      handleSubmit(e);
+                    } else {
+                      scrollToSection(e);
+                    }
+                  }}
                 />
               </div>
             </section>

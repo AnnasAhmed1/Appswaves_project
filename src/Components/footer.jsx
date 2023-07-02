@@ -2,12 +2,12 @@ import React from "react";
 import ButtonComp from "../Helper/button_comp";
 import { P1 } from "../Helper/paragraphs";
 import { H2 } from "../Helper/headings";
-import { Grid } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const servicesList = [
@@ -67,9 +67,14 @@ const Footer = () => {
             <div className="grid-container">
               {servicesList.map((service, index) => {
                 return (
-                  <p className="grid-item" key={index}>
+                  <Link
+                    className="grid-item"
+                    key={index}
+                    to={`/services/${service.replace(/ /g, "-")}`}
+                    target="_self"
+                  >
                     {service}
-                  </p>
+                  </Link>
                 );
               })}
             </div>
@@ -79,9 +84,9 @@ const Footer = () => {
             <div className="grid-container">
               {solutionsList.map((solution, index) => {
                 return (
-                  <p className="grid-item" key={index}>
+                  <Link className="grid-item" key={index}>
                     {solution}
-                  </p>
+                  </Link>
                 );
               })}
             </div>
@@ -90,9 +95,15 @@ const Footer = () => {
             <h4>About Us</h4>
             {aboutList.map((about, index) => {
               return (
-                <p className="grid-item" key={index}>
+                <Link
+                  style={{
+                    display: "block",
+                  }}
+                  className="grid-item"
+                  key={index}
+                >
                   {about}
-                </p>
+                </Link>
               );
             })}
           </div>

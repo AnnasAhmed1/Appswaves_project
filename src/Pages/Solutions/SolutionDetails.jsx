@@ -10,8 +10,8 @@ import TextField from "@mui/material/TextField";
 import { MenuItem } from "@mui/material";
 import { useParams } from "react-router-dom";
 
-const ServiceDetails = () => {
-  const { servicename } = useParams();
+const SolutionDetails = () => {
+  const { solutionname } = useParams();
   return (
     <Layout gradientButton={true}>
       <main className="service-details-main">
@@ -24,17 +24,17 @@ const ServiceDetails = () => {
                   fontWeight: "600",
                 }}
               >
-                Home / Services /
+                Home / Solutions /
                 <span
                   style={{
                     color: "#ef5123",
                     textTransform: "capitalize",
                   }}
                 >
-                  {" " + servicename}
+                  {" " + solutionname}
                 </span>
               </p>
-              <H1 text={`${servicename?.replace(/-/g, " ")} Company`} />
+              <H1 text={`${solutionname?.replace(/-/g, " ")} Company`} />
               <P2
                 text={
                   "Your search for the best android app development company ends here because Appsnade has a team of experienced android app developers and business specialists ready to help you with your app idea."
@@ -542,4 +542,4 @@ const ServiceDetails = () => {
   );
 };
 
-export default ServiceDetails;
+export default SolutionDetails;
