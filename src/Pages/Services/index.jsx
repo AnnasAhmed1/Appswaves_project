@@ -6,21 +6,32 @@ import ServiceCard from "../../Components/Services/ServiceCard";
 import EastSharpIcon from "@mui/icons-material/EastSharp";
 import Layout from "../../Layout";
 import ButtonComp from "../../Helper/button_comp";
+import axios from "axios";
 
 const Services = () => {
   const formRef = useRef(null);
 
-  const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbzFjN1X4WfQrCPFUlAeP5G1jk1tXgcYMRig8koSf5iIA7zoJU7wGMhX-fhLkQV-UkYa0w/exec";
   const handleSubmit = (e) => {
     console.log("formsubmit");
     e.preventDefault();
-
-    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current) })
-      .then((res) => {
-        console.log("SUCCESSFULLY SUBMITTED");
+    axios
+      .post(
+        "https://sheet.best/api/sheets/e9fcbac4-660b-4b51-8993-168237931e1c",
+        {
+          mainRoute: "services",
+          subRoute: "no_subroute",
+          fullName: "",
+          email: "",
+          number: "",
+          description: "",
+        }
+      )
+      .then((response) => {
+        console.log(response);
       })
-      .catch((err) => console.log(err));
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const primaryService = [
@@ -266,6 +277,12 @@ const Services = () => {
         "Accomplish your technical delivery objectives and create, deploy and test your products and solutions faster.",
     },
   ];
+
+  let fullName = "";
+  let email = "";
+  let number = "";
+  let description = "";
+
   return (
     <Layout>
       <main className="services-main-container container">
@@ -297,10 +314,34 @@ const Services = () => {
               <h2 className="helper-h2">
                 Book A Free<span> Consultation</span>
               </h2>
-              <input placeholder="Full Name"></input>
-              <input placeholder="Email" />
-              <input placeholder="Number" />
-              <input placeholder="Describe Your Project Need" />
+              <input
+                onChange={(e) => {
+                  fullName = e.target.value;
+                }}
+                required
+                placeholder="Full Name"
+              ></input>
+              <input
+                onChange={(e) => {
+                  email = e.target.value;
+                }}
+                required
+                placeholder="Email"
+              />
+              <input
+                onChange={(e) => {
+                  number = e.target.value;
+                }}
+                required
+                placeholder="Number"
+              />
+              <input
+                onChange={(e) => {
+                  description = e.target.value;
+                }}
+                required
+                placeholder="Describe Your Project Need"
+              />
               <p>
                 <input
                   type="checkbox"

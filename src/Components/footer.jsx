@@ -71,7 +71,6 @@ const Footer = () => {
                     className="grid-item"
                     key={index}
                     to={`/services/${service.replace(/ /g, "-")}`}
-                    target="_self"
                   >
                     {service}
                   </Link>
@@ -84,7 +83,11 @@ const Footer = () => {
             <div className="grid-container">
               {solutionsList.map((solution, index) => {
                 return (
-                  <Link className="grid-item" key={index}>
+                  <Link
+                    className="grid-item"
+                    key={index}
+                    to={`/solutions/${solution.replace(/ /g, "-")}`}
+                  >
                     {solution}
                   </Link>
                 );

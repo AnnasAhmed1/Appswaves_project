@@ -4,14 +4,15 @@ import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import GradientButton from "../../Helper/GradientButton";
 import "../../Styles/register.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Register = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const receivedValue = location.state;
   let email;
   let projectName;
@@ -21,7 +22,22 @@ const Register = () => {
 
   return (
     <main className="register-main container">
-      <nav>logo</nav>
+      <nav
+        style={{
+          paddingTop: "10px",
+          position: "sticky",
+          top: "0px",
+        }}
+      >
+        <img
+          style={{
+            display: "block",
+          }}
+          src={require("../../Assets/logo.jpeg")}
+          alt="logo"
+          className="logo"
+        />
+      </nav>
       <section>
         <img src={require("../../Assets/register_img.png")} alt="" />
         <form
@@ -35,6 +51,18 @@ const Register = () => {
               ...receivedValue,
             };
             console.log(objtoSend);
+            axios
+              .post(
+                "https://sheet.best/api/sheets/64a870e1-2c9e-4020-9234-c70b3a11c56a",
+                objtoSend
+              )
+              .then((response) => {
+                console.log(response);
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+            navigate("/");
           }}
           action=""
         >

@@ -157,7 +157,16 @@ const AppCostCalculator = () => {
       }}
       className="container app-cost-calculator-main"
     >
-      <nav>logo</nav>
+      <nav>
+        <img
+          style={{
+            display: "block",
+          }}
+          src={require("../../Assets/logo.jpeg")}
+          alt="logo"
+          className="logo"
+        />
+      </nav>
       <div className="fixed-container">
         <section id="section-1" className="calculator-section">
           <h1

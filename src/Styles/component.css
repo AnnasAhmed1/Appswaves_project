@@ -1,5 +1,36 @@
 @import '../App.css';
 
+
+.logo {
+    width: 75px;
+}
+
+@media(max-width:1200px) {
+    .logo {
+        width: 70px;
+    }
+}
+
+@media(max-width:993px) {
+    .logo {
+        width: 60px;
+    }
+}
+
+/* 
+@media(max-width:768px) {
+    .logo {
+        width: 60px;
+    }
+}
+
+@media(max-width:576px) {
+    .logo {
+        width: 40px;
+    }
+} */
+
+
 .navbar {
     border-bottom: 1px solid #ebebeb;
     background-color: #ffffff;
@@ -19,8 +50,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
     left: 0;
     top: 0;
+}
+
+.navbar>.container button {
+    /* margin: 10px 0; */
 }
 
 .navbar>.container>p {
@@ -44,11 +81,13 @@
 
 .navbar>.container>ul>li {
     list-style: none;
+    /* height: 0px; */
 }
 
 .navbar .nav-dropdown span {
     /* width: 1000px !important; */
     display: flex;
+    align-items: center;
 }
 
 .navbar>.container>ul>li>a {
@@ -56,12 +95,39 @@
     list-style: none;
     font-size: 14px;
     /* height: 90px; */
-    line-height: 90px;
+    /* line-height: 00px; */
     padding: 0 16px;
     color: #000;
     font-weight: 600;
     cursor: pointer;
 }
+
+.navbar>.container>ul>li:nth-last-child(2) {
+    margin-right: 15px;
+}
+
+@media (max-width:1200px) {
+
+    .navbar>.container>ul>li>a {
+        font-size: 14px;
+        /* line-height: 0px; */
+        padding: 0 12px;
+    }
+}
+
+@media (max-width:993px) {
+
+    .navbar>.container>ul>li>a {
+        font-size: 12px;
+        /* line-height: 0px; */
+        padding: 0 5px;
+    }
+
+    .navbar>.container>ul>li:nth-last-child(2) {
+        margin-right: 8px;
+    }
+}
+
 
 .navbar>.container>ul>li>a:hover {
     /* border-top:2px solid var(--primary-color) ; */
@@ -69,15 +135,14 @@
     transition: .3s linear;
 }
 
-.navbar>.container>ul>li:nth-last-child(2) {
-    margin-right: 15px;
-}
+
 
 .navbar>.container>ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px 0;
+    /* padding: 2px 0; */
+    height: 100%;
     /* gap: 32px; */
 }
 

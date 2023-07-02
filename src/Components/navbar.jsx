@@ -525,13 +525,17 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <Button>{"chck"}</Button>
           </Dropdown> */}
-          <p
-            style={{
-              flex: 1,
-            }}
-          >
-            logo
-          </p>
+          <div>
+            <img
+              style={{
+                display: "block",
+                flex: 1,
+              }}
+              src={require("../Assets/logo.jpeg")}
+              alt="logo"
+              className="logo"
+            />
+          </div>
           <ul className="nav-mobile">
             <Button
               id="basic-button"

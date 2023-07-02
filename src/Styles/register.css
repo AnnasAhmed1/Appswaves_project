@@ -6,15 +6,19 @@
 }
 
 .register-main section img {
-    width: 100%;
-    flex: 1;
+    display: block;
+    /* height: 200px !important; */
+    object-fit: contain;
+    /* flex: 2; */
+    width: 50%;
 }
 
 .register-main section form {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 4;
 }
+
 
 .register-main section form .MuiFormControl-root {
     display: block;
@@ -29,4 +33,23 @@
 .register-main section form .MuiFormControl-root .MuiInputBase-root input {
     line-height: 40px;
     font-size: 14px;
+}
+
+@media(max-width:1200px) {
+
+    .register-main section img {
+        width: 60%;
+    }
+
+}
+
+@media(max-width:768px) {
+    .register-main section {
+        flex-direction: column;
+    }
+
+    .register-main section img {
+        width: 80%;
+    }
+
 }

@@ -6,8 +6,9 @@
 
 .app-cost-calculator-main nav {
     height: 10vh;
-    overflow: hidden;
-    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* overflow: hidden; */
     position: sticky;
     top: 0;
     background-color: #fff;
