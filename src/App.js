@@ -20,8 +20,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Solutions from "./Pages/Solutions";
 import SolutionDetails from "./Pages/Solutions/SolutionDetails";
-// import "~slick-carousel/slick/slick.css";
-// import "~slick-carousel/slick/slick-theme.css";
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
