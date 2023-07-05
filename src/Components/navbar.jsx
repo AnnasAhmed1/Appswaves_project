@@ -516,15 +516,6 @@ const Navbar = ({ gradientButton = false }) => {
     <nav className="navbar-head">
       <nav className="navbar">
         <div className="container">
-          {/* <Dropdown
-            menu={{
-              items,
-            }}
-            placement="bottom"
-            arrow
-          >
-            <Button>{"chck"}</Button>
-          </Dropdown> */}
           <div>
             <img
               style={{
@@ -560,7 +551,7 @@ const Navbar = ({ gradientButton = false }) => {
                 return (
                   <MenuItem>
                     <li key={i}>
-                      <Link to={v.title == "home" ? "/" : v.title}>
+                      <Link to={v.title == "home" ? "/" : `/${v.title}`}>
                         {v.title}
                       </Link>
                     </li>

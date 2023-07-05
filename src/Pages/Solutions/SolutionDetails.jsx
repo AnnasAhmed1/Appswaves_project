@@ -23,10 +23,10 @@ const SolutionDetails = () => {
         {
           mainRoute: "services",
           subRoute: solutionname,
-          fullName: "",
-          email: "",
-          number: "",
-          description: "",
+          fullName,
+          email,
+          number,
+          description,
         }
       )
       .then((response) => {

@@ -189,6 +189,7 @@
     .service-details-main .featured-container .container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .service-details-main .featured-container p {
 
         font-size: 20px;
@@ -224,11 +225,13 @@
 
 .service-details-main .digital-expertise>.container>div:nth-child(2) {
     flex: 3;
-    height: 600px;
+    height: 650px;
     overflow-y: scroll;
     scrollbar-width: 0px;
 
 }
+
+
 
 .service-details-main .digital-expertise>.container>div:nth-child(1) {
     /* width: 60%; */
@@ -242,25 +245,44 @@
     overflow-x: hidden;
 }
 
+
 .heading {
     line-height: 42px;
     font-size: 32px;
     margin-bottom: 10px;
 
 }
-@media(max-width:1200px){
+
+@media(max-width:1200px) {
     .heading {
         line-height: 40px;
         font-size: 30px;
         margin-bottom: 10px;
-    
     }
     .service-details-main .digital-expertise>.container {
         gap: 170px;
     }
-    
-    
 }
+
+@media(max-width:768px) {
+    .service-details-main .digital-expertise>.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+      .heading {
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    .service-details-main .digital-expertise>.container>div:nth-child(1) {
+        position: relative;
+    }
+
+    .service-details-main .digital-expertise>.container>div:nth-child(2) {
+        height: auto;
+    }
+}
+
 .service-details-main .digital-expertise>.container .services-list h2 {
     font-size: 30px;
     margin: 10px 15px;
@@ -285,10 +307,34 @@
     flex: 3;
 }
 
+
+
 .service-details-main .usp-section>.container2>ul {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+}
+
+@media(max-width:993px) {
+    .service-details-main .usp-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+
+    }
+
+    .service-details-main .usp-section>.container2 {
+        display: block;
+        margin: 0;
+    }
+
+    /* 
+
+    .service-details-main .usp-section>.container2>ul {
+        flex-direction: column;
+        gap: 0px;
+    } */
 }
 
 .service-details-main .usp-section>.container2>ul li {
@@ -329,6 +375,17 @@
 
 .service-details-main .end-service-section .service-details-grid div {
     padding: 70px 00px;
+}
+
+@media(max-width:993px) {
+    .service-details-main .end-service-section .service-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-details-main .end-service-section .service-details-grid div {
+        padding: 10px 00px;
+    }
+
 }
 
 .service-details-main .end-service-section .service-details-grid h3 {
@@ -414,6 +471,8 @@
 
 }
 
+
+
 .service-details-main .build-section .container>div {
     flex: 1;
 }
@@ -438,6 +497,61 @@
     display: flex;
     gap: 10px;
 
+}
+
+@media(max-width:768px) {
+    .service-details-main .build-section .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .service-details-main .why-section .text-container {
+        width: 100%;
+    }
+
+    .service-details-main .solution-section>.container {
+        flex-direction: column;
+    }
+
+    .service-details-main .build-section .container>img {
+        width: 80%;
+    }
+
+    .service-details-main .get-in-section .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-details-main .featured-container h1 {
+        font-size: 55px;
+    }
+
+    .service-details-main .featured-container p img {
+        width: 40px;
+    }
+
+    .service-details-main .usp-section>.container2>ul {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .service-details-main .end-service-section .service-details-grid {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left !important;
+    }
+    .service-details-main .get-in-section .container .form-container>div input{
+        flex-direction: column;
+    }
+    .service-details-main .get-in-section .container .form-container>div input{
+        display: block;
+
+
+    }
+    .heading {
+        line-height: 35px;
+        font-size: 20px;
+    }
 }
 
 .service-details-main .get-in-section .container .form-container>div {

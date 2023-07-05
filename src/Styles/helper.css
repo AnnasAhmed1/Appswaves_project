@@ -4,7 +4,7 @@
     border-radius: 50px;
     font-family: Poppins, sans-serif;
     font-weight: 600;
-    padding: 13px 24px;
+    padding: 6px 24px;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -243,6 +243,11 @@
         position: relative;
     }
 
+    .helper-h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
     .helper-h2::after,
     .helper-h1::after,
     .helper-h3::after,
@@ -283,6 +288,11 @@
         width: 400px;
         z-index: -1;
         font-size: 40px;
+    }
+
+    .helper-h3 {
+        font-size: 25px;
+        line-height: 60px;
     }
 
     .helper-p1 {

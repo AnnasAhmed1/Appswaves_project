@@ -21,10 +21,10 @@ const Solutions = () => {
         {
           mainRoute: "solution",
           subRoute: "no_subroute",
-          fullName: "",
-          email: "",
-          number: "",
-          description: "",
+          fullName,
+          email,
+          number,
+          description,
         }
       )
       .then((response) => {
@@ -39,7 +39,7 @@ const Solutions = () => {
     {
       title: "CMS",
       description:
-        " TekRevol is capable of providing tailored CMS solutions that integrate a user-friendly interface and advanced features",
+        " Appsnade is capable of providing tailored CMS solutions that integrate a user-friendly interface and advanced features",
     },
 
     {
@@ -57,7 +57,7 @@ const Solutions = () => {
     {
       title: "ERP",
       description:
-        " TekRevol provides ERP software development services that offer end-to-end ERP development",
+        " Appsnade provides ERP software development services that offer end-to-end ERP development",
     },
 
     {
@@ -76,31 +76,31 @@ const Solutions = () => {
     {
       title: "Healthcare",
       description:
-        " Transform your healthcare business with TekRevol's customized healthcare solutions",
+        " Transform your healthcare business with Appsnade's customized healthcare solutions",
     },
 
     {
       title: "Educational",
       description:
-        " TekRevol builds custom learning management software for enterprises and institutions",
+        " Appsnade builds custom learning management software for enterprises and institutions",
     },
 
     {
       title: "Fintech",
       description:
-        " TekRevol is a custom Fintech software development company that builds digital banking and investment applications",
+        " Appsnade is a custom Fintech software development company that builds digital banking and investment applications",
     },
 
     {
       title: "Logistics",
       description:
-        " TekRevol creates logistic software for businesses to manage warehousing, storage, and streamline logistic operations",
+        " Appsnade creates logistic software for businesses to manage warehousing, storage, and streamline logistic operations",
     },
 
     {
       title: "Retail",
       description:
-        " TekRevol offers advanced retail software solutions to improve user experience and increase sales",
+        " Appsnade offers advanced retail software solutions to improve user experience and increase sales",
     },
 
     {
@@ -118,13 +118,13 @@ const Solutions = () => {
     {
       title: "Music",
       description:
-        " Tekrevol is a prime music app development company, helping clients worldwide",
+        " Appsnade is a prime music app development company, helping clients worldwide",
     },
 
     {
       title: "On-demand",
       description:
-        " Tekrevol is an expert on-demand delivery app development company that has served multiple startups and entrepreneurs",
+        " Appsnade is an expert on-demand delivery app development company that has served multiple startups and entrepreneurs",
     },
 
     {
@@ -224,6 +224,7 @@ const Solutions = () => {
                   key={index}
                   title={service.title}
                   description={service.description}
+                  route={"solutions"}
                 />
               );
             })}
@@ -238,6 +239,7 @@ const Solutions = () => {
                   key={index}
                   title={service.title}
                   description={service.description}
+                  route={"solutions"}
                 />
               );
             })}

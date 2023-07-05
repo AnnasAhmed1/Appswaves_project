@@ -584,6 +584,24 @@ footer .bottom-section {
     border-right: 1px solid #e2e2e2;
 }
 
+@media(max-width:576px) {
+    .app-types>img {
+        width: 140px;
+        height: 70px;
+        margin-right: 0px !important;
+
+
+        border-right: 0px;
+
+    }
+
+    .app-types {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
 /* info-section */
 .info-section {
     width: 50%;
@@ -636,6 +654,30 @@ footer .bottom-section {
     font-weight: 600;
 }
 
+@media(max-width:768px) {
+    .info-section .personal-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-section .personal-info img {
+        width: 50px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .info-section .personal-info>div:nth-child(2)>p {
+        font-size: 16px;
+    }
+
+    .info-section .personal-info>div:nth-child(1)>div>h6 {
+
+        font-size: 16px;
+    }
+
+}
+
 /* home components end */
 
 /* services components start */
@@ -648,6 +690,8 @@ footer .bottom-section {
     position: relative;
     transition: .3s linear;
     margin-bottom: 30px;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .service-card h4 {

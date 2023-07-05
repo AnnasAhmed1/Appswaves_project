@@ -151,10 +151,12 @@
 
 .home-main-container .estimation-section>section>h2 {
     flex: 1;
+    z-index: 1;
 }
 
 .home-main-container .estimation-section>section>div {
-    flex: 1
+    flex: 1;
+    z-index: 2;
 }
 
 .home-main-container .AMJ-section {

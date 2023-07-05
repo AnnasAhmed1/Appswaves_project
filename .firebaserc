@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "tekrevol-project"
-  }
+    "default": "tekrevol-project",
+    "appsnade": "appsnade-7978c"
+  },
+  "targets": {},
+  "etags": {}
 }

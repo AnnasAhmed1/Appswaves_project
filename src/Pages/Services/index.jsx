@@ -20,10 +20,10 @@ const Services = () => {
         {
           mainRoute: "services",
           subRoute: "no_subroute",
-          fullName: "",
-          email: "",
-          number: "",
-          description: "",
+          fullName,
+          email,
+          number,
+          description,
         }
       )
       .then((response) => {
@@ -38,19 +38,19 @@ const Services = () => {
     {
       title: "Android App Development",
       description:
-        "TekRevol develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
+        "Appsnade develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
     },
 
     {
       title: "iOS App Development",
       description:
-        "TekRevol has a team of experienced Android App Developers that are ready to help you with your app idea.",
+        "Appsnade has a team of experienced Android App Developers that are ready to help you with your app idea.",
     },
 
     {
       title: "Cross Platform App Development",
       description:
-        "Partner with TekRevol to get the most out of your next app project",
+        "Partner with Appsnade to get the most out of your next app project",
     },
 
     {
@@ -68,7 +68,7 @@ const Services = () => {
     {
       title: "Flutter app development",
       description:
-        "TekRevol is a full-scale flutter app development company that build scalable mobile apps",
+        "Appsnade is a full-scale flutter app development company that build scalable mobile apps",
     },
 
     {
@@ -80,19 +80,19 @@ const Services = () => {
     {
       title: "Game Development",
       description:
-        "TekRevol is a leading mobile game development company that develop high-quality mobile games",
+        "Appsnade is a leading mobile game development company that develop high-quality mobile games",
     },
 
     {
       title: "React Native App Development",
       description:
-        "Partner with TekRevol as your react native app development company.",
+        "Partner with Appsnade as your react native app development company.",
     },
 
     {
       title: "Mobile App Support",
       description:
-        "Tekrevol provides result-orientated and efficient application support and maintenance solution for after deployment.",
+        "Appsnade provides result-orientated and efficient application support and maintenance solution for after deployment.",
     },
 
     {
@@ -147,7 +147,7 @@ const Services = () => {
     {
       title: "Emerging Technology",
       description:
-        "TekRevol delivers world-class enterprise emerging technology solution",
+        "Appsnade delivers world-class enterprise emerging technology solution",
     },
 
     {
@@ -165,7 +165,7 @@ const Services = () => {
     {
       title: "Data Analytics",
       description:
-        "TekRevol’s big data analytics services are designed for enterprise organizations.",
+        "Appsnade’s big data analytics services are designed for enterprise organizations.",
     },
 
     {
@@ -189,19 +189,19 @@ const Services = () => {
     {
       title: "MVP Software Development",
       description:
-        "TekRevol is experienced in designing, developing, and launching minimum viable products",
+        "Appsnade is experienced in designing, developing, and launching minimum viable products",
     },
 
     {
       title: "Managing Mobility",
       description:
-        "Tekrevol helps you set up the architecture, build mobility systems",
+        "Appsnade helps you set up the architecture, build mobility systems",
     },
 
     {
       title: "ERP Development",
       description:
-        "TekRevol’s enterprise technology services are suited for large institutions",
+        "Appsnade’s enterprise technology services are suited for large institutions",
     },
 
     {
@@ -213,7 +213,7 @@ const Services = () => {
     {
       title: "Research and Development",
       description:
-        "TekRevol is a technology research and development company working to improve existing services",
+        "Appsnade is a technology research and development company working to improve existing services",
     },
   ];
   const trendingServices = [
@@ -250,7 +250,7 @@ const Services = () => {
     {
       title: "NFT Development",
       description:
-        "TekRevol boards experienced NFT developers in the industry to facilitate the digital assets",
+        "Appsnade boards experienced NFT developers in the industry to facilitate the digital assets",
     },
 
     {
@@ -364,6 +364,7 @@ const Services = () => {
                   key={index}
                   title={service.title}
                   description={service.description}
+                  route={"services"}
                 />
               );
             })}
@@ -378,6 +379,7 @@ const Services = () => {
                   key={index}
                   title={service.title}
                   description={service.description}
+                  route={"services"}
                 />
               );
             })}
@@ -392,6 +394,7 @@ const Services = () => {
                   key={index}
                   title={service.title}
                   description={service.description}
+                  route={"services"}
                 />
               );
             })}

@@ -458,10 +458,12 @@ const Home = () => {
 
           <div className="container">
             <section className="main-section services-section">
-              <H2
-                text={"Custom Software & Mobile App Development Company"}
-                dataText="App Development"
-              />
+              <div>
+                <H2
+                  text={"Custom Software & Mobile App Development Company"}
+                  dataText="App Development"
+                />
+              </div>
               <div>
                 <P1
                   text={
