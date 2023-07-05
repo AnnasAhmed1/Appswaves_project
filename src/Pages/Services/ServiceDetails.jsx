@@ -10,6 +10,7 @@ import TextField from "@mui/material/TextField";
 import { MenuItem } from "@mui/material";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import DetailsForm from "../../Components/details_form";
 
 const ServiceDetails = () => {
   const { servicename } = useParams();
@@ -90,6 +91,7 @@ const ServiceDetails = () => {
               </div>
             </div>
             <div>
+              <DetailsForm />
               <form onSubmit={handleSubmit} action="">
                 <h2 className="helper-h2">
                   Book A Free<span> Consultation</span>
@@ -527,7 +529,6 @@ const ServiceDetails = () => {
                 color="#fff"
               />
               <div>
-                {/* <label for="cars">Choose a car:</label> */}
                 <TextField
                   sx={{
                     flex: 1,
@@ -535,7 +536,6 @@ const ServiceDetails = () => {
                   id="standard-select-currency"
                   select
                   defaultValue="Select Project Type"
-                  // helperText="Select Project Type"
                   variant="standard"
                 >
                   {[
@@ -550,12 +550,6 @@ const ServiceDetails = () => {
                     </MenuItem>
                   ))}
                 </TextField>
-                {/* <select name="cars" id="cars">
-                  <option value="">Website Design & Dev</option>
-                  <option value="">UI/UX Design</option>
-                  <option value="">Mobile App Design & Dev</option>
-                  <option value="">Blockchain Project</option>
-                </select> */}
                 <TextField
                   sx={{
                     flex: 1,

@@ -2,7 +2,12 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
+
   font-weight: 400;
+}
+
+#root {
+  overflow-x: hidden !important;
 }
 
 @font-face {
