@@ -7,6 +7,8 @@ import EastSharpIcon from "@mui/icons-material/EastSharp";
 import Layout from "../../Layout";
 import ButtonComp from "../../Helper/button_comp";
 import axios from "axios";
+import FeaturedSlider from "../../Components/FeaturedSlider";
+import OurClients from "../../Components/OurClients";
 
 const Solutions = () => {
   const formRef = useRef(null);
@@ -215,6 +217,8 @@ const Solutions = () => {
             </form>
           </div>
         </section>
+        <FeaturedSlider />
+
         <section className="primary-service-section main-section">
           <H2 text={"Products"} dataText="Products" />
           <div>
@@ -246,6 +250,7 @@ const Solutions = () => {
           </div>
         </section>
       </main>
+      <OurClients />
     </Layout>
   );
 };

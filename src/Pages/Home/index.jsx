@@ -18,6 +18,8 @@ import Layout from "../../Layout";
 import Navbar from "../../Components/navbar";
 import Footer from "../../Components/footer";
 import { Link } from "react-router-dom";
+import OurClients from "../../Components/OurClients";
+import FeaturedSlider from "../../Components/FeaturedSlider";
 
 const Home = () => {
   const [active, setActive] = useState(0);
@@ -538,6 +540,7 @@ const Home = () => {
               </div>
             </div>
           </section>
+
           <section className="main-section/ insights-section">
             <div className="container">
               <div className="insights-list">
@@ -561,6 +564,8 @@ const Home = () => {
           </div> */}
             </div>
           </section>
+          <FeaturedSlider />
+          <OurClients />
           {/* <section className="main-section featured-section">
         <div className="container">
           <H2 text={"We're Featured In"} />

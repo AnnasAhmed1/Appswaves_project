@@ -819,3 +819,73 @@ footer .bottom-section {
 .sub-nav-container>div>div a:hover {
     color: var(--primary-color);
 }
+
+.clients-section .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    .clients-section .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 0;
+    }
+}
+
+.card-animation {
+    border: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    transition: all 0.1s ease-in-out;
+
+    --c: var(--primary-color);
+    /* the border color */
+    --b: 2px;
+    /* the border thickness*/
+    --g: 5px;
+    /* the gap on hover */
+
+    /* padding: calc(var(--g) + var(--b)); */
+    --_g: #0000 25%, var(--c) 0;
+    background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+    transition: .1s, background-position .1s .1s;
+    cursor: pointer;
+
+}
+
+.card-animation:hover {
+    padding: 0px;
+
+    --_i: 100%;
+    transition: .3s, background-size .1s .3s;
+}
+
+.card-animation img {
+    width: 100%;
+}
+
+.featured-section h2::after {
+    text-align: center;
+    width: 100%;
+}
+
+.featured-section .card-animation img {
+    height: 150px;
+}
+
+@media(max-width:993px) {
+    .featured-section .card-animation img {
+        height: 120px;
+    }
+}
+
+@media(max-width:576px) {
+    .featured-section .card-animation img {
+        height: 100px;
+    }
+}
