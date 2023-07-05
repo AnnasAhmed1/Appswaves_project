@@ -516,7 +516,7 @@ const Navbar = ({ gradientButton = false }) => {
     <nav className="navbar-head">
       <nav className="navbar">
         <div className="container">
-          <div>
+          <Link to={"/"}>
             <img
               style={{
                 display: "block",
@@ -526,7 +526,7 @@ const Navbar = ({ gradientButton = false }) => {
               alt="logo"
               className="logo"
             />
-          </div>
+          </Link>
           <ul className="nav-mobile">
             <Button
               id="basic-button"

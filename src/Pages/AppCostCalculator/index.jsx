@@ -8,9 +8,10 @@ import {
 import "../../Styles/AppCostCalculator.css";
 import GradientButton from "../../Helper/GradientButton";
 import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSharp";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import instance from "../../Axois";
 import axios from "axios";
+import NavOnlyLogo from "../../Components/navOnlyLogo";
 const AppCostCalculator = () => {
   const formRef = useRef(null);
   const [activeSection, setActiveSection] = useState(1);
@@ -157,16 +158,7 @@ const AppCostCalculator = () => {
       }}
       className="container app-cost-calculator-main"
     >
-      <nav>
-        <img
-          style={{
-            display: "block",
-          }}
-          src={require("../../Assets/logo.jpeg")}
-          alt="logo"
-          className="logo"
-        />
-      </nav>
+      <NavOnlyLogo />
       <div className="fixed-container">
         <section id="section-1" className="calculator-section">
           <h1

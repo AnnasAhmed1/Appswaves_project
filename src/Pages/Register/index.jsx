@@ -9,6 +9,7 @@ import GradientButton from "../../Helper/GradientButton";
 import "../../Styles/register.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import NavOnlyLogo from "../../Components/navOnlyLogo";
 
 const Register = () => {
   const location = useLocation();
@@ -22,22 +23,7 @@ const Register = () => {
 
   return (
     <main className="register-main container">
-      <nav
-        style={{
-          paddingTop: "10px",
-          position: "sticky",
-          top: "0px",
-        }}
-      >
-        <img
-          style={{
-            display: "block",
-          }}
-          src={require("../../Assets/logo.jpeg")}
-          alt="logo"
-          className="logo"
-        />
-      </nav>
+      <NavOnlyLogo />
       <section>
         <img src={require("../../Assets/register_img.png")} alt="" />
         <form
