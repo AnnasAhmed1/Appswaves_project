@@ -65,7 +65,6 @@ const FeaturedSlider = () => {
               <img
                 style={{
                   width: "100%",
-
                   objectFit: "cover",
                   margin: "0 auto",
                 }}

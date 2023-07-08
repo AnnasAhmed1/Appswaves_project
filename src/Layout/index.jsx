@@ -8,7 +8,7 @@ const Layout = ({ children, gradientButton = false }) => {
       <Navbar gradientButton={gradientButton} />
       <main>{children}</main>
       <Footer />
-    </div>
+    </div> 
   );
 };
 
