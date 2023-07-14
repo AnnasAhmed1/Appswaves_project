@@ -40,51 +40,50 @@ const LocationDetail = () => {
   const primaryService = [
     {
       title: "Florida",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
 
     {
       title: "San Francisco",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
 
     {
       title: "Washington DC",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
     {
       title: "Los Angeles",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
 
     {
       title: "New York",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
 
     {
       title: "Chicago",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
     {
       title: "Miami",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
 
     {
       title: "New Jersey",
-      description:"App developer in Florida",
-      description2:"Software-Development-Florida"
+      description: "App developer in Florida",
+      description2: "Software-Development-Florida",
     },
   ];
-
 
   let fullName = "";
   let email = "";
@@ -97,16 +96,14 @@ const LocationDetail = () => {
         <section className="consultation-section">
           <div>
             <div>
-              <li>Appsnade</li>
+              <li>Appswaves</li>
               <EastSharpIcon />
               <li>Location</li>
             </div>
-            <H1
-              text={"Empowering Businesses Worldwide With Innovation"}
-            />
+            <H1 text={"Empowering Businesses Worldwide With Innovation"} />
             <P1
               text={
-                "At appsnade,  is a global technology and digital solutions provider that has built a strong presence across multiple continents. We have established ourselves as a leader in the industry by offering innovative digital products and services to clients."
+                "At Appswaves,  is a global technology and digital solutions provider that has built a strong presence across multiple continents. We have established ourselves as a leader in the industry by offering innovative digital products and services to clients."
               }
               color={"#f47a1f"}
             />
@@ -195,7 +192,6 @@ const LocationDetail = () => {
             })}
           </div>
         </section> */}
-     
       </main>
       <OurClients />
     </Layout>
@@ -203,5 +199,3 @@ const LocationDetail = () => {
 };
 
 export default LocationDetail;
-
-

@@ -40,19 +40,19 @@ const Services = () => {
     {
       title: "Android App Development",
       description:
-        "Appsnade develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
+        "Appswaves develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
     },
 
     {
       title: "iOS App Development",
       description:
-        "Appsnade has a team of experienced Android App Developers that are ready to help you with your app idea.",
+        "Appswaves has a team of experienced Android App Developers that are ready to help you with your app idea.",
     },
 
     {
       title: "Cross Platform App Development",
       description:
-        "Partner with Appsnade to get the most out of your next app project",
+        "Partner with Appswaves to get the most out of your next app project",
     },
 
     {
@@ -70,7 +70,7 @@ const Services = () => {
     {
       title: "Flutter app development",
       description:
-        "Appsnade is a full-scale flutter app development company that build scalable mobile apps",
+        "Appswaves is a full-scale flutter app development company that build scalable mobile apps",
     },
 
     {
@@ -82,19 +82,19 @@ const Services = () => {
     {
       title: "Game Development",
       description:
-        "Appsnade is a leading mobile game development company that develop high-quality mobile games",
+        "Appswaves is a leading mobile game development company that develop high-quality mobile games",
     },
 
     {
       title: "React Native App Development",
       description:
-        "Partner with Appsnade as your react native app development company.",
+        "Partner with Appswaves as your react native app development company.",
     },
 
     {
       title: "Mobile App Support",
       description:
-        "Appsnade provides result-orientated and efficient application support and maintenance solution for after deployment.",
+        "Appswaves provides result-orientated and efficient application support and maintenance solution for after deployment.",
     },
 
     {
@@ -149,7 +149,7 @@ const Services = () => {
     {
       title: "Emerging Technology",
       description:
-        "Appsnade delivers world-class enterprise emerging technology solution",
+        "Appswaves delivers world-class enterprise emerging technology solution",
     },
 
     {
@@ -167,7 +167,7 @@ const Services = () => {
     {
       title: "Data Analytics",
       description:
-        "Appsnade’s big data analytics services are designed for enterprise organizations.",
+        "Appswaves’s big data analytics services are designed for enterprise organizations.",
     },
 
     {
@@ -191,19 +191,19 @@ const Services = () => {
     {
       title: "MVP Software Development",
       description:
-        "Appsnade is experienced in designing, developing, and launching minimum viable products",
+        "Appswaves is experienced in designing, developing, and launching minimum viable products",
     },
 
     {
       title: "Managing Mobility",
       description:
-        "Appsnade helps you set up the architecture, build mobility systems",
+        "Appswaves helps you set up the architecture, build mobility systems",
     },
 
     {
       title: "ERP Development",
       description:
-        "Appsnade’s enterprise technology services are suited for large institutions",
+        "Appswaves’s enterprise technology services are suited for large institutions",
     },
 
     {
@@ -215,7 +215,7 @@ const Services = () => {
     {
       title: "Research and Development",
       description:
-        "Appsnade is a technology research and development company working to improve existing services",
+        "Appswaves is a technology research and development company working to improve existing services",
     },
   ];
   const trendingServices = [
@@ -252,7 +252,7 @@ const Services = () => {
     {
       title: "NFT Development",
       description:
-        "Appsnade boards experienced NFT developers in the industry to facilitate the digital assets",
+        "Appswaves boards experienced NFT developers in the industry to facilitate the digital assets",
     },
 
     {
@@ -291,7 +291,7 @@ const Services = () => {
         <section className="consultation-section">
           <div>
             <div>
-              <li>Appsnade</li>
+              <li>Appswaves</li>
               <EastSharpIcon />
               <li>Services</li>
             </div>
@@ -405,27 +405,27 @@ const Services = () => {
         </section>
       </main>
       <OurClients
-            imagesArr={[
-              "legend.png",
-              "waste.png",
-              "teemates.png",
-              "nurse.webp",
-              "kinder.png",
-              "saudi_bell.png",
-              "san_university.png",
-              "save_win.png",
-              "al_husaani.png",
-              "nde.webp",
-              "stock_ship.png",
-              "soundly.png",
-              "legend.png",
-              "waste.png",
-              "teemates.png",
-              "nurse.webp",
-              "kinder.png",
-              "saudi_bell.png",
-            ]}
-          />
+        imagesArr={[
+          "legend.png",
+          "waste.png",
+          "teemates.png",
+          "nurse.webp",
+          "kinder.png",
+          "saudi_bell.png",
+          "san_university.png",
+          "save_win.png",
+          "al_husaani.png",
+          "nde.webp",
+          "stock_ship.png",
+          "soundly.png",
+          "legend.png",
+          "waste.png",
+          "teemates.png",
+          "nurse.webp",
+          "kinder.png",
+          "saudi_bell.png",
+        ]}
+      />
     </Layout>
   );
 };

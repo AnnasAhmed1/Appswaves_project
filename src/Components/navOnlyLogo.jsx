@@ -15,7 +15,7 @@ const NavOnlyLogo = () => {
           style={{
             display: "block",
           }}
-          src={require("../Assets/logo.jpeg")}
+          src={require("../Assets/logo.png")}
           alt="logo"
           className="logo"
         />

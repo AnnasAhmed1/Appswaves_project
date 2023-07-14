@@ -1,5 +1,6 @@
 {
-  "name": "tekrevolproject1",
+  "name": "appswaves",
+  "homepage": "https://appswaves.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

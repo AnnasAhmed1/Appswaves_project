@@ -317,34 +317,31 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <div>
               <div>
-                <a className="link-list-item" href={`/insights/about`}>
-                  About TekRevol
+                <a className="link-list-item" href={`/about`}>
+                  About Appswaves
+                </a>
+                <a className="link-list-item" href={`/life`}>
+                  Life At Appswaves
                 </a>
                 <a
                   className="link-list-item"
-                  href={`/insights/life-at-tekRevol`}
+                  // href={`/blogs`}
                 >
-                  Life At TekRevol
-                </a>
-                <a className="link-list-item" href={`/insights/blogs`}>
                   Blogs
                 </a>
-                <a className="link-list-item" href={`/insights/press`}>
+                <a className="link-list-item" href={`/press`}>
                   Press
                 </a>
-                <a className="link-list-item" href={`/insights/career`}>
+                <a className="link-list-item" href={`/career`}>
                   Career
                 </a>
-                <a className="link-list-item" href={`/insights/podcast`}>
+                <a className="link-list-item" href={`/podcast`}>
                   Podcast
                 </a>
-                <a className="link-list-item" href={`/insights/events`}>
+                <a className="link-list-item" href={`/events`}>
                   Events
                 </a>
-                <a
-                  className="link-list-item"
-                  href={`/insights/referral-program`}
-                >
+                <a className="link-list-item" href={`/referral-program`}>
                   Referral Program
                 </a>
               </div>
@@ -402,8 +399,9 @@ const Navbar = ({ gradientButton = false }) => {
               style={{
                 display: "block",
                 flex: 1,
+                // width: "150px",
               }}
-              src={require("../Assets/logo.jpeg")}
+              src={require("../Assets/logo.png")}
               alt="logo"
               className="logo"
             />

@@ -32,7 +32,7 @@ const ReferralSlider = () => {
       image: "",
       title: "Instant Commissions",
       details:
-        "Tekrevol’s app development services are among the best in the industry, resulting in higher chances of conversions. This will help you get conversions at a much more rapid rate and once we close the deal, we will pay your commissions immediately. Up to 25% in commissions from a single app project can help you generate thousands of dollars in revenue.",
+        "Appswaves’s app development services are among the best in the industry, resulting in higher chances of conversions. This will help you get conversions at a much more rapid rate and once we close the deal, we will pay your commissions immediately. Up to 25% in commissions from a single app project can help you generate thousands of dollars in revenue.",
     },
   ];
   const settings = {

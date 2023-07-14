@@ -63,7 +63,7 @@ function App() {
         <Route path="/insights/:insightname" element={<InsightsDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/life" element={<Life />} />
-        <Route path="/press-release" element={<Press />} />
+        <Route path="/press" element={<Press />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/podcast" element={<Podcast />} />
         <Route path="/events" element={<Events />} />

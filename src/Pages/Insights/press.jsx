@@ -20,7 +20,7 @@ const Press = () => {
     { title: "Node.js", details: "How to Hire the Right Node.js Developer?" },
     {
       title: "ZAWYA",
-      details: "Tekrevol resumes its journey of revolution in MENA",
+      details: "Appswaves resumes its journey of revolution in MENA",
     },
     {
       title: "BUSINESS.COM",
@@ -37,7 +37,7 @@ const Press = () => {
     },
     {
       title: "FORBES",
-      details: "Tekrevol addresses five unique ways to attract investors",
+      details: "Appswaves addresses five unique ways to attract investors",
     },
     {
       title: "FORBES",
@@ -62,7 +62,7 @@ const Press = () => {
     },
     {
       title: "TOP DEVELOPERS",
-      details: `Interview with Co-founder and CTO of TekRevol - Asim Rais Siddiqui`,
+      details: `Interview with Co-founder and CTO of Appswaves - Asim Rais Siddiqui`,
     },
 
     {
@@ -91,7 +91,7 @@ const Press = () => {
     },
     {
       title: "GOOD FIRMS",
-      details: `"Tekrevol LLC is a Silicon Valley startup" - Asim Rais Siddiqui Interviewed by GoodFirms`,
+      details: `"Appswaves LLC is a Silicon Valley startup" - Asim Rais Siddiqui Interviewed by GoodFirms`,
     },
     {
       title: "FORBES",

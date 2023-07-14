@@ -41,7 +41,7 @@ const Solutions = () => {
     {
       title: "CMS",
       description:
-        " Appsnade is capable of providing tailored CMS solutions that integrate a user-friendly interface and advanced features",
+        " Appswaves is capable of providing tailored CMS solutions that integrate a user-friendly interface and advanced features",
     },
 
     {
@@ -59,7 +59,7 @@ const Solutions = () => {
     {
       title: "ERP",
       description:
-        " Appsnade provides ERP software development services that offer end-to-end ERP development",
+        " Appswaves provides ERP software development services that offer end-to-end ERP development",
     },
 
     {
@@ -78,31 +78,31 @@ const Solutions = () => {
     {
       title: "Healthcare",
       description:
-        " Transform your healthcare business with Appsnade's customized healthcare solutions",
+        " Transform your healthcare business with Appswaves's customized healthcare solutions",
     },
 
     {
       title: "Educational",
       description:
-        " Appsnade builds custom learning management software for enterprises and institutions",
+        " Appswaves builds custom learning management software for enterprises and institutions",
     },
 
     {
       title: "Fintech",
       description:
-        " Appsnade is a custom Fintech software development company that builds digital banking and investment applications",
+        " Appswaves is a custom Fintech software development company that builds digital banking and investment applications",
     },
 
     {
       title: "Logistics",
       description:
-        " Appsnade creates logistic software for businesses to manage warehousing, storage, and streamline logistic operations",
+        " Appswaves creates logistic software for businesses to manage warehousing, storage, and streamline logistic operations",
     },
 
     {
       title: "Retail",
       description:
-        " Appsnade offers advanced retail software solutions to improve user experience and increase sales",
+        " Appswaves offers advanced retail software solutions to improve user experience and increase sales",
     },
 
     {
@@ -120,13 +120,13 @@ const Solutions = () => {
     {
       title: "Music",
       description:
-        " Appsnade is a prime music app development company, helping clients worldwide",
+        " Appswaves is a prime music app development company, helping clients worldwide",
     },
 
     {
       title: "On-demand",
       description:
-        " Appsnade is an expert on-demand delivery app development company that has served multiple startups and entrepreneurs",
+        " Appswaves is an expert on-demand delivery app development company that has served multiple startups and entrepreneurs",
     },
 
     {
@@ -152,7 +152,7 @@ const Solutions = () => {
         <section className="consultation-section">
           <div>
             <div>
-              <li>Appsnade</li>
+              <li>Appswaves</li>
               <EastSharpIcon />
               <li>Solutions</li>
             </div>

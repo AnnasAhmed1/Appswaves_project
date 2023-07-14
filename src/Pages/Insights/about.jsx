@@ -38,7 +38,7 @@ const About = () => {
                 </li>
               </div>
               <H1
-                text={`${insightname?.replace(/-/g, " ")} Appsnade`}
+                text={`${insightname?.replace(/-/g, " ")} Appswaves`}
                 dataText="Who We Are"
               />
               <P1
@@ -87,7 +87,7 @@ const About = () => {
               />
               <P1
                 text={
-                  "TekRevol aims to help startups and organizations recognize their potential and leverage optimum, highly customized solutions for business growth and ROI."
+                  "Appswaves aims to help startups and organizations recognize their potential and leverage optimum, highly customized solutions for business growth and ROI."
                 }
               />
             </div>
@@ -111,7 +111,7 @@ const About = () => {
             <H4 text={"Our Story"} />
             <P1
               text={
-                "TekRevol came into existence after two tech enthusiasts from different backgrounds joined forces to create something bound to become a difference-maker in the digital world."
+                "Appswaves came into existence after two tech enthusiasts from different backgrounds joined forces to create something bound to become a difference-maker in the digital world."
               }
             />
             <P1
@@ -170,7 +170,7 @@ const About = () => {
               <P1 text={"Impact 2023 & Beyond!"} color="#ffffff" />
               <P1
                 text={
-                  "TekRevol vows to continue serving the community with social welfare and CSR efforts for communal betterment and well-being.Our vision to impact 20 million lives through better employment and education opportunities and empowerment marches toward 2023, and we will aggressively pursue the future beyond."
+                  "Appswaves vows to continue serving the community with social welfare and CSR efforts for communal betterment and well-being.Our vision to impact 20 million lives through better employment and education opportunities and empowerment marches toward 2023, and we will aggressively pursue the future beyond."
                 }
                 color="#ffffff"
               />

@@ -32,7 +32,7 @@ const Footer = () => {
     "IT Staff Augmentation",
   ];
   const aboutList = [
-    "About Appsnade",
+    "About Appswaves",
     "Referral Program",
     "Blogs",
     "Press",
@@ -104,6 +104,11 @@ const Footer = () => {
                   }}
                   className="grid-item"
                   key={index}
+                  to={
+                    about == "About Appswaves"
+                      ? `/about`
+                      : `/${about.replace(/ /g, "-")}`
+                  }
                 >
                   {about}
                 </Link>
@@ -129,7 +134,7 @@ const Footer = () => {
           </div>
         </section>
         <section className="bottom-section">
-          <p>© Appsnade 2023. All rights reserved</p>
+          <p>© Appswaves 2023. All rights reserved</p>
           <div>
             <p>Terms and Conditions</p>
             <p>Privacy Policy</p>

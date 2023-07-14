@@ -40,7 +40,7 @@ const Technologies = () => {
     {
       title: ".Net",
       description:
-        "Appsnade uses the .NET platform to build state-of-the-art software systems. We build technologies using .NET that help you in every walk of life.",
+        "Appswaves uses the .NET platform to build state-of-the-art software systems. We build technologies using .NET that help you in every walk of life.",
     },
 
     {
@@ -58,7 +58,7 @@ const Technologies = () => {
     {
       title: "Node.js",
       description:
-        "Get an interactive web app or a data-intensive program with a robust backend with TekRevol’s Node.js developers.",
+        "Get an interactive web app or a data-intensive program with a robust backend with Appswaves’s Node.js developers.",
     },
 
     {
@@ -82,19 +82,19 @@ const Technologies = () => {
     // {
     //   title: "Game Development",
     //   description:
-    //     "Appsnade is a leading mobile game development company that develop high-quality mobile games",
+    //     "Appswaves is a leading mobile game development company that develop high-quality mobile games",
     // },
 
     // {
     //   title: "React Native App Development",
     //   description:
-    //     "Partner with Appsnade as your react native app development company.",
+    //     "Partner with Appswaves as your react native app development company.",
     // },
 
     // {
     //   title: "Mobile App Support",
     //   description:
-    //     "Appsnade provides result-orientated and efficient application support and maintenance solution for after deployment.",
+    //     "Appswaves provides result-orientated and efficient application support and maintenance solution for after deployment.",
     // },
 
     // {
@@ -137,7 +137,7 @@ const Technologies = () => {
     {
       title: "Azure",
       description:
-        "Appsnade helps you create and deliver innovative business experiences to your stakeholders on a secure, robust Microsoft Azure cloud infrastructure.",
+        "Appswaves helps you create and deliver innovative business experiences to your stakeholders on a secure, robust Microsoft Azure cloud infrastructure.",
     },
 
     {
@@ -167,7 +167,7 @@ const Technologies = () => {
     // {
     //   title: "Data Analytics",
     //   description:
-    //     "Appsnade’s big data analytics services are designed for enterprise organizations.",
+    //     "Appswaves’s big data analytics services are designed for enterprise organizations.",
     // },
 
     // {
@@ -191,19 +191,19 @@ const Technologies = () => {
     // {
     //   title: "MVP Software Development",
     //   description:
-    //     "Appsnade is experienced in designing, developing, and launching minimum viable products",
+    //     "Appswaves is experienced in designing, developing, and launching minimum viable products",
     // },
 
     // {
     //   title: "Managing Mobility",
     //   description:
-    //     "Appsnade helps you set up the architecture, build mobility systems",
+    //     "Appswaves helps you set up the architecture, build mobility systems",
     // },
 
     // {
     //   title: "ERP Development",
     //   description:
-    //     "Appsnade’s enterprise technology services are suited for large institutions",
+    //     "Appswaves’s enterprise technology services are suited for large institutions",
     // },
 
     // {
@@ -215,7 +215,7 @@ const Technologies = () => {
     // {
     //   title: "Research and Development",
     //   description:
-    //     "Appsnade is a technology research and development company working to improve existing services",
+    //     "Appswaves is a technology research and development company working to improve existing services",
     // },
   ];
   const trendingServices = [
@@ -252,7 +252,7 @@ const Technologies = () => {
     {
       title: "NFT Development",
       description:
-        "Appsnade boards experienced NFT developers in the industry to facilitate the digital assets",
+        "Appswaves boards experienced NFT developers in the industry to facilitate the digital assets",
     },
 
     {
@@ -291,16 +291,14 @@ const Technologies = () => {
         <section className="consultation-section">
           <div>
             <div>
-              <li>Appsnade</li>
+              <li>Appswaves</li>
               <EastSharpIcon />
               <li>Technologies </li>
             </div>
-            <H1
-              text={"Revolutionary Technologies For A Changing World"}
-            />
+            <H1 text={"Revolutionary Technologies For A Changing World"} />
             <P1
               text={
-                "At appsnade, we harness the power of revolutionary technologies, employing a diverse range of programming languages and platforms to create custom solutions that perfectly align with the unique needs of our clients."
+                "At Appswaves, we harness the power of revolutionary technologies, employing a diverse range of programming languages and platforms to create custom solutions that perfectly align with the unique needs of our clients."
               }
               color={"#f47a1f"}
             />
@@ -410,5 +408,3 @@ const Technologies = () => {
 };
 
 export default Technologies;
-
-

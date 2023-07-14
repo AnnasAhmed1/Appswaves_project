@@ -59,7 +59,7 @@ const Podcast = () => {
     {
       title: " 8 Valuable Lessons from Joseph Landes",
       details:
-        " In the fourth episode of “Technology for a Change,” Season 3, Hady Shaikh, the Principal Product Strategist at TekRevol, interviewed Joseph Landes, the Chief Revenue Officer and Chief Evangelist of Nerdio...",
+        " In the fourth episode of “Technology for a Change,” Season 3, Hady Shaikh, the Principal Product Strategist at Appswaves, interviewed Joseph Landes, the Chief Revenue Officer and Chief Evangelist of Nerdio...",
     },
     {
       title:
@@ -71,12 +71,12 @@ const Podcast = () => {
       title:
         " Cyberpsychologist Dr. Michael Nuccitelli Shares Ipredators Vision",
       details:
-        " In our latest Technology for a Change episode, Season 3, TekRevol’s Principal Product Strategist...",
+        " In our latest Technology for a Change episode, Season 3, Appswaves’s Principal Product Strategist...",
     },
     {
       title: " Discussing Tech In Dubai & GCC",
       details:
-        " In the latest episode of Technology for a Change, Season 3, TekRevol’s Principal Product Strategist, Hady Shaikh, interviewed Yalla!Market’s founder, Leo Dovbenko....",
+        " In the latest episode of Technology for a Change, Season 3, Appswaves’s Principal Product Strategist, Hady Shaikh, interviewed Yalla!Market’s founder, Leo Dovbenko....",
     },
     {
       title: " Featuring Rajat Mishra Co-Founder of Prezentium",
@@ -97,7 +97,7 @@ const Podcast = () => {
     {
       title: " Tim Kalinowski, Founder, and CEO of LORE",
       details:
-        " Helping your business/product transform into a brand through communication, Tekrevol partners with Tim Kalinowski, Founder, and CEO of LORE....",
+        " Helping your business/product transform into a brand through communication, Appswaves partners with Tim Kalinowski, Founder, and CEO of LORE....",
     },
     {
       title: " Mr. Tyrone Johnson",
@@ -110,20 +110,20 @@ const Podcast = () => {
         " Discussing the topic “From necessity to global standards, how digital technology is reshaping businesses in the MENA region”...",
     },
     {
-      title: " Managing Partner of Tekrevol Daniel Burgess",
+      title: " Managing Partner of Appswaves Daniel Burgess",
       details:
-        " In Season 2 Episode#1 of Technology For Change, Managing Partner of Tekrevol Daniel Burgess discusses the role of technology...",
+        " In Season 2 Episode#1 of Technology For Change, Managing Partner of Appswaves Daniel Burgess discusses the role of technology...",
     },
     {
       title:
         " How Can Technology Implementations Improve Educational Institution Processes?",
       details:
-        " Tekrevol's Managing Partner Daniel Burgess is joined by Lillian Row, a Baltimore County Board of Education member...",
+        " Appswaves's Managing Partner Daniel Burgess is joined by Lillian Row, a Baltimore County Board of Education member...",
     },
     {
       title: " What Does Automation Mean for a Business in The 21st century?",
       details:
-        " In Episode 7, Tekrevol’s Co-Founder and CMO Abeer Raza is joined by the Co-Founder of Remote New Media and Code Assembly, Mr.Paul McGillivray...",
+        " In Episode 7, Appswaves’s Co-Founder and CMO Abeer Raza is joined by the Co-Founder of Remote New Media and Code Assembly, Mr.Paul McGillivray...",
     },
     {
       title: " How To Get Investors To Say “YES” To Your Startup!",
@@ -138,7 +138,7 @@ const Podcast = () => {
     {
       title: " What Makes A Successful Entrepreneur From The Lens Of A Coach",
       details:
-        " In episode #04, Tekrevol Co-Founder Abeer Raza sits with Michelle Law, a business consultant with over a decade of experience of coaching entrepreneurs...",
+        " In episode #04, Appswaves Co-Founder Abeer Raza sits with Michelle Law, a business consultant with over a decade of experience of coaching entrepreneurs...",
     },
     {
       title:

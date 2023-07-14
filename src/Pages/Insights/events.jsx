@@ -42,19 +42,19 @@ const Events = () => {
     {
       title: "Android App Development",
       description:
-        "Appsnade develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
+        "Appswaves develops next-gen iOS apps for businesses that ensure market disruption, growth, and scalability.",
     },
 
     {
       title: "iOS App Development",
       description:
-        "Appsnade has a team of experienced Android App Developers that are ready to help you with your app idea.",
+        "Appswaves has a team of experienced Android App Developers that are ready to help you with your app idea.",
     },
 
     {
       title: "Cross Platform App Development",
       description:
-        "Partner with Appsnade to get the most out of your next app project",
+        "Partner with Appswaves to get the most out of your next app project",
     },
 
     {
@@ -72,7 +72,7 @@ const Events = () => {
     {
       title: "Flutter app development",
       description:
-        "Appsnade is a full-scale flutter app development company that build scalable mobile apps",
+        "Appswaves is a full-scale flutter app development company that build scalable mobile apps",
     },
 
     {
@@ -84,19 +84,19 @@ const Events = () => {
     {
       title: "Game Development",
       description:
-        "Appsnade is a leading mobile game development company that develop high-quality mobile games",
+        "Appswaves is a leading mobile game development company that develop high-quality mobile games",
     },
 
     {
       title: "React Native App Development",
       description:
-        "Partner with Appsnade as your react native app development company.",
+        "Partner with Appswaves as your react native app development company.",
     },
 
     {
       title: "Mobile App Support",
       description:
-        "Appsnade provides result-orientated and efficient application support and maintenance solution for after deployment.",
+        "Appswaves provides result-orientated and efficient application support and maintenance solution for after deployment.",
     },
 
     {
@@ -151,7 +151,7 @@ const Events = () => {
     {
       title: "Emerging Technology",
       description:
-        "Appsnade delivers world-class enterprise emerging technology solution",
+        "Appswaves delivers world-class enterprise emerging technology solution",
     },
 
     {
@@ -169,7 +169,7 @@ const Events = () => {
     {
       title: "Data Analytics",
       description:
-        "Appsnade’s big data analytics services are designed for enterprise organizations.",
+        "Appswaves’s big data analytics services are designed for enterprise organizations.",
     },
 
     {
@@ -193,19 +193,19 @@ const Events = () => {
     {
       title: "MVP Software Development",
       description:
-        "Appsnade is experienced in designing, developing, and launching minimum viable products",
+        "Appswaves is experienced in designing, developing, and launching minimum viable products",
     },
 
     {
       title: "Managing Mobility",
       description:
-        "Appsnade helps you set up the architecture, build mobility systems",
+        "Appswaves helps you set up the architecture, build mobility systems",
     },
 
     {
       title: "ERP Development",
       description:
-        "Appsnade’s enterprise technology services are suited for large institutions",
+        "Appswaves’s enterprise technology services are suited for large institutions",
     },
 
     {
@@ -217,7 +217,7 @@ const Events = () => {
     {
       title: "Research and Development",
       description:
-        "Appsnade is a technology research and development company working to improve existing services",
+        "Appswaves is a technology research and development company working to improve existing services",
     },
   ];
   const trendingServices = [
@@ -254,7 +254,7 @@ const Events = () => {
     {
       title: "NFT Development",
       description:
-        "Appsnade boards experienced NFT developers in the industry to facilitate the digital assets",
+        "Appswaves boards experienced NFT developers in the industry to facilitate the digital assets",
     },
 
     {
@@ -424,7 +424,7 @@ const Events = () => {
               />
               <P1
                 text={
-                  "As a leading mobile app development company, TekRevol has a portfolio of digital healthcare solutions built for healthcare practitioners, hospitals, clinics, and patients"
+                  "As a leading mobile app development company, Appswaves has a portfolio of digital healthcare solutions built for healthcare practitioners, hospitals, clinics, and patients"
                 }
                 color="#ffffff"
               />

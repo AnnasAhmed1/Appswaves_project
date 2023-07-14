@@ -14,7 +14,7 @@ import GradeSharpIcon from "@mui/icons-material/GradeSharp";
 import AwardsSlider from "../../Components/Home/AwardsSlider";
 
 const InsightsDetails = () => {
-  const insightname = "Life at TekRevol";
+  const insightname = "Life at Appswaves";
 
   return (
     <Layout>
@@ -40,7 +40,7 @@ const InsightsDetails = () => {
               <H1 text={"Living & Working From Anywhere"} dataText="Job Hunt" />
               <P1
                 text={
-                  "At Tekrevol, we foster a culture of inclusivity and collaboration, bringing together passionate technology enthusiasts who strive to drive innovation and unlock their full potential. Our team is dedicated to working together to achieve our goals, pushing the boundaries of what's possible."
+                  "At Appswaves, we foster a culture of inclusivity and collaboration, bringing together passionate technology enthusiasts who strive to drive innovation and unlock their full potential. Our team is dedicated to working together to achieve our goals, pushing the boundaries of what's possible."
                 }
                 color={"#f47a1f"}
               />
@@ -77,13 +77,13 @@ const InsightsDetails = () => {
             <div>
               <P1
                 text={
-                  "We are a team of lifelong learners passionate about technology and innovation. At TekRevol, we believe hard work and dedication should be recognized and rewarded, which is why we have employed a transparent, yet encouraging that emphasizes attitude, performance, and results."
+                  "We are a team of lifelong learners passionate about technology and innovation. At Appswaves, we believe hard work and dedication should be recognized and rewarded, which is why we have employed a transparent, yet encouraging that emphasizes attitude, performance, and results."
                 }
                 color="#ffffff"
               />
               <P1
                 text={
-                  "As a member of TekRevol, you'll have the opportunity to make positive impacts through your work and be recognized for your contributions."
+                  "As a member of Appswaves, you'll have the opportunity to make positive impacts through your work and be recognized for your contributions."
                 }
                 color="#ffffff"
               />
@@ -121,7 +121,7 @@ const InsightsDetails = () => {
               />
               <P1
                 text={
-                  "Whether donating to orphanages and nursing homes, conducting routine visits to charity organizations, organizing and facilitating workshops for the learning and development of our people, or partnering with universities to provide internship opportunities leading to permanent employment, you will find TekRevol at the forefront."
+                  "Whether donating to orphanages and nursing homes, conducting routine visits to charity organizations, organizing and facilitating workshops for the learning and development of our people, or partnering with universities to provide internship opportunities leading to permanent employment, you will find Appswaves at the forefront."
                 }
               />
             </div>
@@ -152,7 +152,7 @@ const InsightsDetails = () => {
               />
               <P1
                 text={
-                  "We believe that great things happen when talented people come together and collaborate. If you're excited about making a real impact through technology, we invite you to apply and become a part of the TekRevol family!"
+                  "We believe that great things happen when talented people come together and collaborate. If you're excited about making a real impact through technology, we invite you to apply and become a part of the Appswaves family!"
                 }
                 color="#ffffff"
               />

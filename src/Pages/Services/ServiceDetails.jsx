@@ -67,7 +67,7 @@ const ServiceDetails = () => {
               <H1 text={`${servicename?.replace(/-/g, " ")} Company`} />
               <P2
                 text={
-                  "Your search for the best android app development company ends here because Appsnade has a team of experienced android app developers and business specialists ready to help you with your app idea."
+                  "Your search for the best android app development company ends here because Appswaves has a team of experienced android app developers and business specialists ready to help you with your app idea."
                 }
               />
               <P2
@@ -334,12 +334,12 @@ const ServiceDetails = () => {
                 }}
                 className="heading"
               >
-                How Appsnade’s Android App Development Solutions can help you
+                How Appswaves’s Android App Development Solutions can help you
                 Scale
               </h2>
               <P2
                 text={
-                  "At Appsnade, we aim to push boundaries when delivering the best android app development services. Our end-to-end android app development solutions enable businesses from different walks of life, i.e., SMEs, Startups, and enterprise-grade organizations, to pivot to a whole new level, unleash their business’s true potential, and unlock new opportunities and revenue streams through custom android app development."
+                  "At Appswaves, we aim to push boundaries when delivering the best android app development services. Our end-to-end android app development solutions enable businesses from different walks of life, i.e., SMEs, Startups, and enterprise-grade organizations, to pivot to a whole new level, unleash their business’s true potential, and unlock new opportunities and revenue streams through custom android app development."
                 }
                 color={"#ffffff"}
               />
@@ -402,7 +402,7 @@ const ServiceDetails = () => {
               </h2>
               <P2
                 text={
-                  "As a global tech solutions provider, Appsnade is always looking for new initiatives to pave the way for enterprise businesses and enlist top-grade tech support and solutions to help them achieve exponential growth."
+                  "As a global tech solutions provider, Appswaves is always looking for new initiatives to pave the way for enterprise businesses and enlist top-grade tech support and solutions to help them achieve exponential growth."
                 }
               />
               <P2
@@ -458,7 +458,7 @@ const ServiceDetails = () => {
             <P2
               color="#fff"
               text={
-                "We treat our clients like a part of the Appsnade family and ensure their experience with us is hassle-free and transparent."
+                "We treat our clients like a part of the Appswaves family and ensure their experience with us is hassle-free and transparent."
               }
             />
             <div className="service-details-grid">
