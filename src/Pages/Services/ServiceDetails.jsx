@@ -91,7 +91,6 @@ const ServiceDetails = () => {
               </div>
             </div>
             <div>
-              <DetailsForm />
               <form onSubmit={handleSubmit} action="">
                 <h2 className="helper-h2">
                   Book A Free<span> Consultation</span>
