@@ -1,0 +1,12 @@
+.popular-topics>div {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+.popular-topics div h4:hover {
+    color: var(--primary-color);
+    /* color: red; */
+
+}

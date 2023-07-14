@@ -1,0 +1,29 @@
+.podcast-image-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.podcast-image-container img {
+    width: 100%;
+}
+
+.podcast-card {
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+
+.podcast-card>a {
+    font-size: 11px;
+    text-decoration: underline;
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+.events-types:hover {
+    background-color: var(--primary-color);
+    border: none;
+
+}

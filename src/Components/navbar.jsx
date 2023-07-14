@@ -256,10 +256,10 @@ const Navbar = ({ gradientButton = false }) => {
             <div>
               <h3>Languages</h3>
               <div>
-                <a className="link-list-item" href={`/solutions/automotive`}>
+                <a className="link-list-item" href={`/technology/.Net`}>
                   .Net
                 </a>
-                <a className="link-list-item" href={`/solutions/healthcare`}>
+                <a className="link-list-item" href={`/technology/HTML5`}>
                   HTML5
                 </a>
                 <a className="link-list-item" href={`/solutions/on-demand`}>
@@ -293,35 +293,62 @@ const Navbar = ({ gradientButton = false }) => {
                 </a>
               </div>
             </div>
-            {/* <div>
-              <h3
-                style={{
-                  opacity: 0,
-                }}
-              >
-                I
-              </h3>
+          </div>
+        </div>
+      ),
+    },
+  ];
+  const subContainerInsights = [
+    {
+      key: 1,
+      label: (
+        <div
+          style={{
+            marginRight: "150px",
+          }}
+          className="sub-nav-container "
+          href="app-development"
+        >
+          <div
+            style={{
+              display: "flex",
+            }}
+            className="container"
+          >
+            <div>
               <div>
-                <a className="link-list-item" href={`/solutions/logistics`}>
-                Platforms
-                </a>
-                <a className="link-list-item" href={`/solutions/retail`}>
-                  Retail
-                </a>
-                <a className="link-list-item" href={`/solutions/ecommerce`}>
-                  Ecommerce
-                </a>
-                <a className="link-list-item" href={`/solutions/real-estate`}>
-                  Real Estate
+                <a className="link-list-item" href={`/insights/about`}>
+                  About TekRevol
                 </a>
                 <a
                   className="link-list-item"
-                  href={`/solutions/staff-augmentation`}
+                  href={`/insights/life-at-tekRevol`}
                 >
-                  Staff Augmentation
+                  Life At TekRevol
+                </a>
+                <a className="link-list-item" href={`/insights/blogs`}>
+                  Blogs
+                </a>
+                <a className="link-list-item" href={`/insights/press`}>
+                  Press
+                </a>
+                <a className="link-list-item" href={`/insights/career`}>
+                  Career
+                </a>
+                <a className="link-list-item" href={`/insights/podcast`}>
+                  Podcast
+                </a>
+                <a className="link-list-item" href={`/insights/events`}>
+                  Events
+                </a>
+                <a
+                  className="link-list-item"
+                  href={`/insights/referral-program`}
+                >
+                  Referral Program
                 </a>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       ),
@@ -354,45 +381,7 @@ const Navbar = ({ gradientButton = false }) => {
     },
     {
       title: "Insights",
-      subRoutes: false,
-    },
-  ];
-  const items = [
-    {
-      key: "1",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com"
-        >
-          1st menu item
-        </a>
-      ),
-    },
-    {
-      key: "2",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.aliyun.com"
-        >
-          2nd menu item
-        </a>
-      ),
-    },
-    {
-      key: "3",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          3rd menu item
-        </a>
-      ),
+      subRoutes: subContainerInsights,
     },
   ];
   const [anchorEl, setAnchorEl] = useState(null);
@@ -462,19 +451,15 @@ const Navbar = ({ gradientButton = false }) => {
                         width: "1000px",
                       }}
                       className="nav-dropdown"
-                      // menu={{
-                      //   items:
-                      //     v.title == "Services"
-                      //       ? subContainerServices
-                      //       : subContainerSolutions,
-                      // }}
                       menu={{
                         items: v.subRoutes,
                       }}
                       placement="bottom"
                       arrow
                     >
-                      <Link to={`/${v.title}`}>{v.title}</Link>
+                      <Link to={v.title !== "Insights" ? `/${v.title}` : null}>
+                        {v.title}
+                      </Link>
                     </Dropdown>
                   ) : (
                     <Link to={`/${v.title === "home" ? "/" : v.title}`}>

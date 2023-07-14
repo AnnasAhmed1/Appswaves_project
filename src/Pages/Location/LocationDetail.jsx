@@ -10,11 +10,9 @@ import axios from "axios";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
 import LocationCard from "../../Components/Location/LocationCard";
-import { useNavigate } from "react-router-dom";
 
-const Location = () => {
+const LocationDetail = () => {
   const formRef = useRef(null);
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     console.log("formsubmit");
@@ -86,6 +84,7 @@ const Location = () => {
       description2:"Software-Development-Florida"
     },
   ];
+
 
   let fullName = "";
   let email = "";
@@ -170,29 +169,39 @@ const Location = () => {
           <div>
             {primaryService.map((service, index) => {
               return (
-                <div 
-                onClick={() => {
-                    navigate(`/LocationDetail`);
-                  }}>
-
                 <LocationCard
                   key={index}
                   title={service.title}
                   description={service.description}
                   description2={service.description2}
-                  // route={"Home"}
+                  route={"services"}
                 />
-                </div>
               );
             })}
           </div>
         </section>
+        {/* <section className="primary-service-section main-section">
+          <H2 text={"Platforms"} dataText="Consulting" />
+          <div>
+            {consultingServices.map((service, index) => {
+              return (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                  route={"services"}
+                />
+              );
+            })}
+          </div>
+        </section> */}
+     
       </main>
       <OurClients />
     </Layout>
   );
 };
 
-export default Location;
+export default LocationDetail;
 
 

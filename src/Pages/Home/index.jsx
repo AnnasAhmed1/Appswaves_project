@@ -332,7 +332,7 @@ const Home = () => {
               <img src={require("../../Assets/calendar.webp")} alt="" />
             </section>
           </div>
-          <div className="container/ estimation-section">
+          <div className="estimation-section">
             <section className=" main-section container">
               <H2
                 text={

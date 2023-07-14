@@ -1,11 +1,18 @@
 import "animate.css";
-export const H1 = ({ text, color = false, center = false, dataText = "" }) => {
+export const H1 = ({
+  text,
+  color = false,
+  center = false,
+  dataText = "",
+  style = {},
+}) => {
   return (
     <h1
       data-text={dataText}
       style={{
         color: color ? color : null,
         textAlign: center ? "center" : null,
+        style,
       }}
       className="helper-h1"
     >
