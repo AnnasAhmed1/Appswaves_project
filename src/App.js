@@ -20,6 +20,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Solutions from "./Pages/Solutions";
 import SolutionDetails from "./Pages/Solutions/SolutionDetails";
+import Location from "./Pages/Location";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,12 +37,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:servicename" element={<ServiceDetails />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/solutions/:solutionname" element={<SolutionDetails />} />
         <Route path="/app-cost-calculator" element={<AppCostCalculator />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/location" element={<Location />} />
         <Route path="/chk" element={<Form />} />
       </Routes>
       <ScrollToTop />

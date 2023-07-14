@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 const Navbar = ({ gradientButton = false }) => {
-  const subContainer = [
+  const subContainerServices = [
     {
       key: 1,
       label: (
@@ -237,232 +237,124 @@ const Navbar = ({ gradientButton = false }) => {
       ),
     },
   ];
+  const subContainerTech = [
+    {
+      key: 1,
+      label: (
+        <div className="sub-nav-container " href="app-development">
+          <div
+            style={{
+              display: "flex",
+            }}
+            className="container"
+          >
+            <div>
+              <h3>Our Technologies</h3>
+              <img src={require(".././Assets/nav_image.webp")} alt="" />
+            </div>
+            <div></div>
+            <div>
+              <h3>Languages</h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/automotive`}>
+                  .Net
+                </a>
+                <a className="link-list-item" href={`/solutions/healthcare`}>
+                  HTML5
+                </a>
+                <a className="link-list-item" href={`/solutions/on-demand`}>
+                  Java
+                </a>
+                <a className="link-list-item" href={`/solutions/education`}>
+                  Node.Js
+                </a>
+                <a className="link-list-item" href={`/solutions/music`}>
+                  PHP
+                </a>
+                <a className="link-list-item" href={`/solutions/fintech`}>
+                  Python
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Platforms</h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/cms-solution`}>
+                  Azure
+                </a>
+                <a className="link-list-item" href={`/solutions/hrm-solution`}>
+                  GCP
+                </a>
+                <a className="link-list-item" href={`/solutions/crm-solution`}>
+                  Oracle
+                </a>
+                <a className="link-list-item" href={`/solutions/erp-solution`}>
+                  SAP
+                </a>
+              </div>
+            </div>
+            {/* <div>
+              <h3
+                style={{
+                  opacity: 0,
+                }}
+              >
+                I
+              </h3>
+              <div>
+                <a className="link-list-item" href={`/solutions/logistics`}>
+                Platforms
+                </a>
+                <a className="link-list-item" href={`/solutions/retail`}>
+                  Retail
+                </a>
+                <a className="link-list-item" href={`/solutions/ecommerce`}>
+                  Ecommerce
+                </a>
+                <a className="link-list-item" href={`/solutions/real-estate`}>
+                  Real Estate
+                </a>
+                <a
+                  className="link-list-item"
+                  href={`/solutions/staff-augmentation`}
+                >
+                  Staff Augmentation
+                </a>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      ),
+    },
+  ];
   const navs = [
     {
       title: "Home",
-      subRoutes: [],
+      subRoutes: false,
     },
     {
       title: "Services",
-      // {
-      //   key: '2',
-      //   label: (
-      //     <a target="" href="https://www.aliyun.com">
-      //       2nd menu item
-      //     </a>
-      //   ),
-      // },
-      subRoutes: [
-        // "Primary",
-
-        // "",
-        // {
-        //   key: 1,
-        //   label: <a href="">Primary</a>,
-        // },
-        {
-          key: 1,
-          label: (
-            <div className="link-list-item" href="app-development">
-              Android App Development
-            </div>
-          ),
-        },
-        {
-          key: 2,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              IPhone App Development
-            </a>
-          ),
-        },
-        {
-          key: 3,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Game Development
-            </a>
-          ),
-        },
-        {
-          key: 4,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Web Development
-            </a>
-          ),
-        },
-        {
-          key: 5,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Custom Software Development
-            </a>
-          ),
-        },
-        {
-          key: 6,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Flutter App Development
-            </a>
-          ),
-        },
-        {
-          key: 7,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              React Native App Development
-            </a>
-          ),
-        },
-        // { key: 1, label: <a className="link-list-item" href=""> Consulting</a> },
-        {
-          key: 8,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Cloud Computing
-            </a>
-          ),
-        },
-        {
-          key: 9,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              CTO Consultant
-            </a>
-          ),
-        },
-        {
-          key: 10,
-          label: (
-            <a className="link-list-item" href="">
-              Emerging Technology
-            </a>
-          ),
-        },
-        {
-          key: 11,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Digital Transformation
-            </a>
-          ),
-        },
-        {
-          key: 12,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Digital Marketplace
-            </a>
-          ),
-        },
-        {
-          key: 13,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Data Analytics
-            </a>
-          ),
-        },
-        {
-          key: 14,
-          label: (
-            <a className="link-list-item" href="">
-              {" "}
-              Digital Strategy
-            </a>
-          ),
-        },
-        // { key: 1, label: <a className="link-list-item" href="">Trending</a> },
-        {
-          key: 15,
-          label: (
-            <a className="link-list-item" href="">
-              AI Development
-            </a>
-          ),
-        },
-        {
-          key: 16,
-          label: (
-            <a className="link-list-item" href="">
-              AR/VR Company
-            </a>
-          ),
-        },
-        {
-          key: 17,
-          label: (
-            <a className="link-list-item" href="">
-              Automation Consultancy
-            </a>
-          ),
-        },
-        {
-          key: 18,
-          label: (
-            <a className="link-list-item" href="">
-              Bluetooth App Development
-            </a>
-          ),
-        },
-        {
-          key: 19,
-          label: (
-            <a className="link-list-item" href="">
-              Automation Consultancy
-            </a>
-          ),
-        },
-        {
-          key: 20,
-          label: (
-            <a className="link-list-item" href="">
-              NFT Development
-            </a>
-          ),
-        },
-        {
-          key: 21,
-          label: (
-            <a className="link-list-item" href="">
-              Machine Learning
-            </a>
-          ),
-        },
-      ],
+      subRoutes: subContainerServices,
     },
     {
       title: "Solutions",
-      subRoutes: [1, 2, 3],
+      subRoutes: subContainerSolutions,
     },
     {
       title: "Technologies",
-      subRoutes: [],
+      subRoutes: subContainerTech,
     },
     {
       title: "Location",
-      subRoutes: [],
+      subRoutes: false,
     },
     {
       title: "Portfolio",
-      subRoutes: [],
+      subRoutes: false,
     },
     {
       title: "Insights",
-      subRoutes: [],
+      subRoutes: false,
     },
   ];
   const items = [
@@ -564,17 +456,20 @@ const Navbar = ({ gradientButton = false }) => {
             {navs?.map((v, i) => {
               return (
                 <li key={i}>
-                  {v.subRoutes.length > 0 ? (
+                  {v.subRoutes ? (
                     <Dropdown
                       style={{
                         width: "1000px",
                       }}
                       className="nav-dropdown"
+                      // menu={{
+                      //   items:
+                      //     v.title == "Services"
+                      //       ? subContainerServices
+                      //       : subContainerSolutions,
+                      // }}
                       menu={{
-                        items:
-                          v.title == "Services"
-                            ? subContainer
-                            : subContainerSolutions,
+                        items: v.subRoutes,
                       }}
                       placement="bottom"
                       arrow
@@ -582,7 +477,9 @@ const Navbar = ({ gradientButton = false }) => {
                       <Link to={`/${v.title}`}>{v.title}</Link>
                     </Dropdown>
                   ) : (
-                    <Link to={"/"}>{v.title}</Link>
+                    <Link to={`/${v.title === "home" ? "/" : v.title}`}>
+                      {v.title}
+                    </Link>
                   )}
                 </li>
               );

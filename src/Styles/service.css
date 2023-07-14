@@ -6,7 +6,6 @@
 
 .services-main-container .consultation-section>div {
     flex: 1;
-
 }
 
 .services-main-container .consultation-section>div>div:nth-child(1) {
@@ -43,7 +42,6 @@
     .services-main-container .consultation-section ul {
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
 
 @media(max-width:768px) {

@@ -2,27 +2,7 @@ import React from "react";
 import { H2 } from "../Helper/headings";
 import { P1 } from "../Helper/paragraphs";
 
-const OurClients = () => {
-  const clients = [
-    "legend.png",
-    "waste.png",
-    "teemates.png",
-    "nurse.webp",
-    "kinder.png",
-    "saudi_bell.png",
-    "san_university.png",
-    "save_win.png",
-    "al_husaani.png",
-    "nde.webp",
-    "stock_ship.png",
-    "soundly.png",
-    "legend.png",
-    "waste.png",
-    "teemates.png",
-    "nurse.webp",
-    "kinder.png",
-    "saudi_bell.png",
-  ];
+const OurClients = ({ imagesArr = [] }) => {
   return (
     <section
       style={{
@@ -38,7 +18,7 @@ const OurClients = () => {
           }
         />
         <div className="clients-grid">
-          {clients.map((image, i) => {
+          {imagesArr.map((image, i) => {
             return (
               <div className="card-animation">
                 <img src={require(`../Assets/${image}`)} alt="" />

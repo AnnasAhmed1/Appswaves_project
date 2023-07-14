@@ -565,7 +565,28 @@ const Home = () => {
             </div>
           </section>
           <FeaturedSlider />
-          <OurClients />
+          <OurClients
+            imagesArr={[
+              "legend.png",
+              "waste.png",
+              "teemates.png",
+              "nurse.webp",
+              "kinder.png",
+              "saudi_bell.png",
+              "san_university.png",
+              "save_win.png",
+              "al_husaani.png",
+              "nde.webp",
+              "stock_ship.png",
+              "soundly.png",
+              "legend.png",
+              "waste.png",
+              "teemates.png",
+              "nurse.webp",
+              "kinder.png",
+              "saudi_bell.png",
+            ]}
+          />
           {/* <section className="main-section featured-section">
         <div className="container">
           <H2 text={"We're Featured In"} />
