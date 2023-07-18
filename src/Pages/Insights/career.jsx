@@ -42,7 +42,7 @@ const Careers = () => {
                 text={
                   "Become a part of a global team of curious development enthusiasts and consultants building the best digital products for startups and enterprises."
                 }
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
               <ul className="helper-p1">
                 <li>Opportunity</li>

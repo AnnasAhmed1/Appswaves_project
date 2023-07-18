@@ -302,7 +302,7 @@ const Services = () => {
               text={
                 "Our unwavering commitment to innovation and customer satisfaction drives us to deliver transformative services that effectively address the ever-evolving demands of businesses in the digital world, ensuring exceptional results and driving impactful transformations."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
             <ul className="helper-p1">
               <li>Strategic roadmap planning</li>

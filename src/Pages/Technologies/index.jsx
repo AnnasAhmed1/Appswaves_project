@@ -300,7 +300,7 @@ const Technologies = () => {
               text={
                 "At Appswaves, we harness the power of revolutionary technologies, employing a diverse range of programming languages and platforms to create custom solutions that perfectly align with the unique needs of our clients."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
             <ul className="helper-p1">
               <li>Emerging technology adoption</li>

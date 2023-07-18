@@ -190,12 +190,12 @@ const ReferralProgram = () => {
                 text={
                   "By becoming our partner in our referral program, you can gain incredible commissions on a consistent basis."
                 }
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
               <H4 text={"Our Last Referral Partner Earned"} />
               <P1
                 text={"He Joined The Program Just 15 Days Ago!"}
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
             </div>
             <div>
@@ -306,7 +306,7 @@ const ReferralProgram = () => {
               />
             </div>
           </section>
-          <section className="awards-section main-section container">
+          {/* <section className="awards-section main-section container">
             <div className="awards">
               <H2 text={"Awards & Recognitions"} dataText="Winning Awards" />
               <P1
@@ -327,7 +327,7 @@ const ReferralProgram = () => {
                 <GradeSharpIcon />
               </div>
             </div>
-          </section>
+          </section> */}
           <div className="container">
             <AwardsSlider />
           </div>

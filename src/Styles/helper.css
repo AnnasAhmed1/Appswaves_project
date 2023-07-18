@@ -24,7 +24,7 @@
     /* font-family: Gilroy-Medium; */
     transition: linear .3s;
     background: rgb(255, 162, 10);
-    background: linear-gradient(-90deg, rgba(255, 162, 10, 1) 0%, rgba(253, 75, 15, 1) 100%);
+    background: linear-gradient(-90deg, #FF799F, #ED3C5F);
     border-radius: 8px;
     height: 40px;
     line-height: 40px;

@@ -476,7 +476,7 @@ footer .bottom-section {
 
 
 .contact_slide {
-    background: linear-gradient(-90deg, rgba(255, 162, 10, 1) 0%, rgba(253, 75, 15, 1) 100%);
+    background: linear-gradient(-90deg, #FF799F, #ED3C5F);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -42,7 +42,7 @@ const Life = () => {
                 text={
                   "At Appswaves, we foster a culture of inclusivity and collaboration, bringing together passionate technology enthusiasts who strive to drive innovation and unlock their full potential. Our team is dedicated to working together to achieve our goals, pushing the boundaries of what's possible."
                 }
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
               <ul className="helper-p1">
                 <li> Inclusive Team Culture</li>

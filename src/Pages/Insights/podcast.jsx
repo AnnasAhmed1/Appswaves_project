@@ -186,7 +186,7 @@ const Podcast = () => {
                 text={
                   "We discuss the latest trends and technologies with entrepreneurs and global business tycoons. Subscribe to our podcast to get meaningful business insights and stay updated with the hottest technology trends worldwide!"
                 }
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
               <ul className="helper-p1">
                 <li>Innovation</li>

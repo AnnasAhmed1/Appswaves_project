@@ -30,7 +30,7 @@ const Home = () => {
         <PanoramaFishEyeIcon
           sx={{
             fontSize: "20px",
-            color: "#f47a1f",
+            color: "#ED3C5F",
           }}
         />
       ),
@@ -46,7 +46,7 @@ const Home = () => {
         <SquareOutlinedIcon
           sx={{
             fontSize: "20px",
-            color: "#f47a1f",
+            color: "#ED3C5F",
           }}
         />
       ),
@@ -62,7 +62,7 @@ const Home = () => {
         <ChangeHistoryIcon
           sx={{
             fontSize: "20px",
-            color: "#f47a1f",
+            color: "#ED3C5F",
           }}
         />
       ),
@@ -294,7 +294,7 @@ const Home = () => {
                 })}
               </div>
             </section>
-            <section className="awards-section main-section">
+            {/* <section className="awards-section main-section">
               <div className="awards">
                 <H2 text={"Awards & Recognitions"} dataText="Winning Awards" />
                 <P1
@@ -315,7 +315,7 @@ const Home = () => {
                   <GradeSharpIcon />
                 </div>
               </div>
-            </section>
+            </section> */}
             <AwardsSlider />
             <section className="crafting-section main-section">
               <div>
@@ -386,7 +386,7 @@ const Home = () => {
                     "The app had to have an interface, super-friendly and less distracting for corporate employees who already have stressful jobs. It had to be feature-packed and targeted at promoting wellness actions including drinking enough water, exercising, taking time off the screens, participating in workouts, and eating healthy breakfasts, lunches, and dinners. We performed meticulous research on the target market, projected users, and the overall scope of the project."
                   }
                 />
-                <img src={require("../../Assets/amj_mobiles.webp")} alt="" />
+                <img src={require("../../Assets/soundly_mobile.jpeg")} alt="" />
               </section>
 
               <PersonalInfo
@@ -412,7 +412,7 @@ const Home = () => {
                 </div>
                 <div className="image-container">
                   <img
-                    src={require("../../Assets/soundly_mobile.webp")}
+                    src={require("../../Assets/soundly_mobile.png")}
                     alt=""
                   />
                 </div>

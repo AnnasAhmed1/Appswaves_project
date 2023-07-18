@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import ButtonComp from "../Helper/button_comp";
 import "../Styles/component.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button, Dropdown } from "antd";
 import GradientButton from "../Helper/GradientButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 const Navbar = ({ gradientButton = false }) => {
+  const navigate = useNavigate();
+
   const subContainerServices = [
     {
       key: 1,
@@ -21,7 +23,7 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <div>
               <h3>Our Services</h3>
-              <img src={require(".././Assets/nav_image.webp")} alt="" />
+              <img src={require(".././Assets/nav_image.png")} alt="" />
             </div>
             <div>
               <h3>Primary</h3>
@@ -155,7 +157,7 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <div>
               <h3>Our Solution</h3>
-              <img src={require(".././Assets/nav_image.webp")} alt="" />
+              <img src={require(".././Assets/nav_image.png")} alt="" />
             </div>
             <div>
               <h3>Primary</h3>
@@ -250,7 +252,7 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <div>
               <h3>Our Technologies</h3>
-              <img src={require(".././Assets/nav_image.webp")} alt="" />
+              <img src={require(".././Assets/nav_image.png")} alt="" />
             </div>
             <div></div>
             <div>
@@ -469,9 +471,21 @@ const Navbar = ({ gradientButton = false }) => {
             })}
 
             {!gradientButton ? (
-              <ButtonComp text="Get a quote" transparent={false} />
+              <ButtonComp
+                text="Get a quote"
+                transparent={false}
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              />
             ) : (
-              <GradientButton text="Contact Us" transparent={false} />
+              <GradientButton
+                text="Contact Us"
+                transparent={false}
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              />
             )}
           </ul>
         </div>

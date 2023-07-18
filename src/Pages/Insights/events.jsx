@@ -326,13 +326,13 @@ const Events = () => {
               text={
                 "Our Learning Resources Are Primed To Keep You In Touch With The Latest Trends In The World Of Tech & Entrepreneurship."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
             <P1
               text={
                 "Bringing The Most Talented People From The World Of Business, We Strive To Create Experiences That Stay With You and Help You Devise Actionable Insights In Order To Power Your Business Forward."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
           </div>
           <div>
@@ -453,7 +453,7 @@ const Events = () => {
             </div>
           </section>
         </div>
-        <section className="awards-section main-section container">
+        {/* <section className="awards-section main-section container">
           <div className="awards">
             <H2 text={"Awards & Recognitions"} dataText="Winning Awards" />
             <P1
@@ -473,7 +473,7 @@ const Events = () => {
               <GradeSharpIcon />
             </div>
           </div>
-        </section>
+        </section> */}
         <div className="container">
           <AwardsSlider />
         </div>

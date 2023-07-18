@@ -109,7 +109,7 @@ const Press = () => {
                 text={
                   "We share our expertise in software development services, including web, mobile, design, and DevOps, with various platforms."
                 }
-                color={"#f47a1f"}
+                color={"#ED3C5F"}
               />
               <ul className="helper-p1">
                 <li> Press Releases</li>

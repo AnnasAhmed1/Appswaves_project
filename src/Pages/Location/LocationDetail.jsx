@@ -105,7 +105,7 @@ const LocationDetail = () => {
               text={
                 "At Appswaves,  is a global technology and digital solutions provider that has built a strong presence across multiple continents. We have established ourselves as a leader in the industry by offering innovative digital products and services to clients."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
             <ul className="helper-p1">
               <li>Global Technology Partner</li>

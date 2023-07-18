@@ -161,7 +161,7 @@ const Solutions = () => {
               text={
                 "We are dedicated to delivering transformative software and app development solutions that evolve and adapt to meet the unique requirements of our clients, propelling their digital evolution and catalyzing profound transformations."
               }
-              color={"#f47a1f"}
+              color={"#ED3C5F"}
             />
             <ul className="helper-p1">
               <li>User-Centered Design</li>

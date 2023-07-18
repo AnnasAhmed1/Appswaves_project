@@ -96,7 +96,7 @@ const TechnologyDetails = () => {
               </div>
             </div>
             <div>
-              <DetailsForm />
+              {/* <DetailsForm /> */}
               <form onSubmit={handleSubmit} action="">
                 <h2 className="helper-h2">
                   Book A Free<span> Consultation</span>

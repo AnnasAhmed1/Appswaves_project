@@ -10,7 +10,7 @@ const TopicsCard = ({ title, details }) => {
       <a
         style={{
           cursor: "pointer",
-          color: "#f47a1f",
+          color: "#ED3C5F",
         }}
         className="helper-p2"
       >

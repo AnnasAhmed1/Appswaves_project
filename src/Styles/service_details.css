@@ -39,7 +39,7 @@
 }
 
 /* .service-details-main .consultation-section .consultation-container form input:after {
-    background: #f47a1f;
+    background: #ED3C5F;
     content: "remme";
     display: block;
     height: 2px;
@@ -70,9 +70,9 @@
     font-size: 15px;
     height: 50px;
     line-height: 45px;
-    color: #f47a1f;
+    color: #ED3C5F;
     border-radius: 10px;
-    border: 2px solid #f47a1f;
+    border: 2px solid #ED3C5F;
     background: #fff0;
     transition: .5s;
     cursor: pointer;
@@ -139,7 +139,7 @@
 }
 
 .service-details-main .featured-container {
-    background-color: #fd4b0f;
+    background-color: #ED3C5F;
 
 }
 
@@ -259,6 +259,7 @@
         font-size: 30px;
         margin-bottom: 10px;
     }
+
     .service-details-main .digital-expertise>.container {
         gap: 170px;
     }
@@ -269,7 +270,8 @@
         flex-direction: column;
         gap: 20px;
     }
-      .heading {
+
+    .heading {
         line-height: 40px;
         font-size: 25px;
     }
@@ -356,7 +358,7 @@
 }
 
 .service-details-main .why-section {
-    background: linear-gradient(90deg, #d8410e 0, #e38b01 100%);
+    background: linear-gradient(-90deg, #FF799F, #ED3C5F);
 }
 
 .service-details-main .why-section .text-container {
@@ -489,7 +491,7 @@
 
 .service-details-main .get-in-section {
 
-    background: linear-gradient(-138deg, #f37a20 0, #ef5123 55%, #ee3824 100%);
+    background: linear-gradient(-90deg, #FF799F, #ED3C5F);
 
 }
 
@@ -536,18 +538,22 @@
         flex-direction: column;
         gap: 0px;
     }
+
     .service-details-main .end-service-section .service-details-grid {
         grid-template-columns: repeat(1, 1fr);
         text-align: left !important;
     }
-    .service-details-main .get-in-section .container .form-container>div input{
+
+    .service-details-main .get-in-section .container .form-container>div input {
         flex-direction: column;
     }
-    .service-details-main .get-in-section .container .form-container>div input{
+
+    .service-details-main .get-in-section .container .form-container>div input {
         display: block;
 
 
     }
+
     .heading {
         line-height: 35px;
         font-size: 20px;
