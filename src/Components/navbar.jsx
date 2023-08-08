@@ -382,6 +382,10 @@ const Navbar = ({ gradientButton = false }) => {
       title: "Insights",
       subRoutes: subContainerInsights,
     },
+    {
+      title: "Payment",
+      subRoutes: false,
+    },
   ];
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);

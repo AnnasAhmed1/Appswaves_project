@@ -33,6 +33,7 @@ import Podcast from "./Pages/Insights/podcast";
 import Events from "./Pages/Insights/events";
 import ReferralProgram from "./Pages/Insights/ReferralProgram";
 import Contact from "./Pages/Contact";
+import Payment from "./Pages/Payment";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -74,6 +75,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/location" element={<Location />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/chk" element={<Form />} />
       </Routes>
       <ScrollToTop />

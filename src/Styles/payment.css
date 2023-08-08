@@ -1,0 +1,73 @@
+@import '../App.css';
+
+.payment-section label,
+.payment-section input,
+.payment-section textarea,
+.payment-section select {
+    display: block;
+}
+
+
+.payment-section label {
+    margin: 5px 0;
+}
+
+.payment-section input,
+.payment-section textarea,
+.payment-section select {
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 30px;
+
+    outline: none;
+
+}
+
+.payment-section input:focus,
+.payment-section textarea:focus,
+.payment-section select:focus {
+    border: 1px solid var(--primary-color);
+
+    border-color: red;
+
+
+}
+
+.payment-section select {
+
+    padding: 9.2px;
+    margin-right: auto;
+}
+
+
+.payment-section input,
+.payment-section select {
+    width: 100%;
+}
+
+.payment-section textarea {
+    width: 100%;
+}
+
+.payment-section .input-container {
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width:576px) {
+    .payment-section .input-container {
+        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+.payment-section .input-container>div {
+    width: 100%;
+}
+
+.payment-section button {
+    width: 100%;
+
+}
