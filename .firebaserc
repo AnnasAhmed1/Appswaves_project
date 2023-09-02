@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "tekrevol-project",
-    "Appswaves": "Appswaves-7978c"
+    "Appswaves": "Appswaves-7978c",
+    "y": "appswaves-3a882"
   },
   "targets": {},
   "etags": {}

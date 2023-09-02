@@ -42,55 +42,55 @@ const Contact = () => {
   let number = "";
   let description = "";
   return (
-    <Layout>
-      <main className="contact-main">
-        <section className="consultation-section/">
-          {/* <p>annas</p> */}
-          <ContactSlider />
-          <div
-            style={{
-              width: "50%",
-              display: "inline-block",
-            }}
-            className="main-section/"
-          >
-            <form ref={formRef} onSubmit={handleSubmit} action="">
-              <h2 className="helper-h2">Let's talk about your project</h2>
-              <input
-                onChange={(e) => {
-                  fullName = e.target.value;
-                }}
-                required
-                placeholder="Full Name"
-              ></input>
-              <input
-                onChange={(e) => {
-                  email = e.target.value;
-                }}
-                required
-                placeholder="Email"
-              />
-              <input
-                onChange={(e) => {
-                  number = e.target.value;
-                }}
-                required
-                placeholder="Phone Number"
-              />
-              <textarea
-                placeholder="Describe your project needs."
-                onChange={(e) => (description = e.target.value)}
-                name="project_need"
-                id=""
-                cols="30"
-                rows="10"
-              ></textarea>
-              <GradientButton transparent={false} text="GET IN TOUCH" />
-            </form>
-          </div>
-        </section>
-      </main>
-    </Layout>
+    // <Layout>
+    <main className="contact-main">
+      <section className="consultation-section/">
+        {/* <p>annas</p> */}
+        <ContactSlider />
+        <div
+          style={{
+            width: "50%",
+            display: "inline-block",
+          }}
+          className="main-section/"
+        >
+          <form ref={formRef} onSubmit={handleSubmit} action="">
+            <h2 className="helper-h2">Let's talk about your project</h2>
+            <input
+              onChange={(e) => {
+                fullName = e.target.value;
+              }}
+              required
+              placeholder="Full Name"
+            ></input>
+            <input
+              onChange={(e) => {
+                email = e.target.value;
+              }}
+              required
+              placeholder="Email"
+            />
+            <input
+              onChange={(e) => {
+                number = e.target.value;
+              }}
+              required
+              placeholder="Phone Number"
+            />
+            <textarea
+              placeholder="Describe your project needs."
+              onChange={(e) => (description = e.target.value)}
+              name="project_need"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <GradientButton transparent={false} text="GET IN TOUCH" />
+          </form>
+        </div>
+      </section>
+    </main>
+    // </Layout>
   );
 };
 
